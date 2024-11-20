@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    /*font-family: Arial;*/
+    margin: 0;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 8px;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.relative {
+    position: relative;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.bar {
+    width: 100%;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.flex-vertical > * {
+    width: 100%;
+    height: inherit;
+}
+
+.flex-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.flex-horizontal > * {
+    height: 100%;
+    width: inherit;
+}

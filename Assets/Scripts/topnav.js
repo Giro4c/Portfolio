@@ -1,10 +1,10 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function ToggleResponsive() {
     var nav = document.getElementById("topnav");
-    if (nav.className === "topnav") {
+    if (nav.className === "nav") {
         nav.className += " responsive";
     } else {
-        nav.className = "topnav";
+        nav.className = "nav";
     }
 
     ToggleNavIcon(nav);
