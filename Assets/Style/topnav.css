@@ -1,3 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    /*font-family: Arial;*/
+    margin: 0;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 8px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -24,7 +39,8 @@
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #04AA6D;
+    /*background-color: #04AA6D;*/
+    background-color: #419cb4;
     color: white;
 }
 
