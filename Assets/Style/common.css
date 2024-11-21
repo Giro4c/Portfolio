@@ -10,7 +10,7 @@ body {
 
 .main {
     max-width: 1200px;
-    margin: 8px;
+    margin: 8px auto;
 }
 
 .fixed {
@@ -53,4 +53,16 @@ body {
 .flex-horizontal > * {
     height: 100%;
     width: inherit;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.center-width {
+    margin: inherit auto;
+}
+
+.center-height {
+    margin: auto inherit;
 }
