@@ -1,39 +1,67 @@
-/* The sidebar menu */
 .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+    position: fixed;
+    /*height: 50%;*/
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-/* The navigation menu links */
-.sidenav .sidenav-section {
-    padding: 6px 8px 6px 16px;
+.sidenav.center {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.sidenav.right {
+
+}
+
+.sidenav.left {
+
+}
+
+.sidenav a {
+    /*Common Styling*/
+    position: relative;
+    /*position: absolute;*/
+    width: 100%;
+
+    padding: 20px 20px;
+
+    transition: 0.3s;
+
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
+    font-size: 20px;
+    color: white;
 }
 
-/* When you mouse over the navigation links, change their color */
+.sidenav.right a {
+    right: -70%; /* Position outside of the screen */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the top left and bottom left side */
+    text-align: left;
+
+    padding-left: 32%;
+
+}
+
+.sidenav.left a {
+    left: -70%; /* Position outside of the screen */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top left and bottom left side */
+    text-align: right;
+
+    padding-right: 32%;
+}
+
 .sidenav a:hover {
-    color: #f1f1f1;
+    /*Common Styling*/
 }
 
-/* Style page content */
-/*.main {
-    margin-left: 160px; !* Same as the width of the sidebar *!
-    padding: 0px 10px;
-}*/
+.sidenav.right a:hover {
+    /*right: -5px;*/
+    right: -5px;
+}
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-/*
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}*/
+.sidenav.left a:hover {
+    left: -5px;
+}

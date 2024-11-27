@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background-color: #f1f1f1;
+    /*font-family: Arial;*/
+    margin: 0;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 8px auto;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.relative {
+    position: relative;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    overflow-x: hidden;
+}
+
+.centered-abs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bar {
+    width: 100%;
+}
+
+.half-bar {
+    width: 50%;
+}
+
+.quarter-bar {
+    width: 25%;
+}
+
+.pilar {
+    height: 100%;
+}
+
+.half-pilar {
+    height: 50%;
+}
+
+.quarter-pilar {
+    height: 25%;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.flex-vertical > * {
+    width: 100%;
+    height: inherit;
+}
+
+.flex-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.flex-horizontal > * {
+    height: 100%;
+    width: inherit;
+}
+
+.align-center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-width {
+    margin: inherit auto;
+}
+
+.center-height {
+    margin: auto inherit;
+}
+
+.img-poly-light {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("../Images/poly-light.jpeg");
+}
+
+.img-poly-dark {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("../Images/poly-dark.jpg");
+}
+
+.img-poly-winter {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("../Images/poly-winter.jpg");
+}
+
+.blur2 {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.blur5 {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.cutout {
+    background-color: black;
+    color: white;
+    mix-blend-mode: multiply;
+    margin: 3px;
+    padding: 5px 7px;
+}
+
+.cutout.darkmode {
+    background-color: #ffffff;
+    color: black;
+    mix-blend-mode: screen;
+}
+
+.bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
