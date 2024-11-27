@@ -158,3 +158,9 @@ body {
     color: black;
     mix-blend-mode: screen;
 }
+
+.bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
