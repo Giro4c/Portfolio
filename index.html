@@ -4,243 +4,57 @@
     <title>Home</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" href="Assets/Style/common.css">
-    <link rel="stylesheet" href="Assets/Style/topnav.css">
-    <link rel="stylesheet" href="Assets/Style/grid.css">
-    <link rel="stylesheet" href="Assets/Style/progressbar.css">
     <link rel="stylesheet" href="Assets/Style/home.css">
+    <link rel="stylesheet" href="Assets/Style/sidenav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<header class="fixed top bar" >
-    <div class="nav" id="topnav">
-        <a href="/index.html" class="active">Home</a>
-        <a href="/index.html">About Me</a>
-        <div class="dropdown">
-            <button class="dropbtn">
-                Unity
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="/projects/projectname.html">Project Name</a>
-                <a href="/projects/projectname.html">Project Name</a>
-                <a href="/projects/projectname.html">Project Name</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Unreal
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="/projects/projectname.html">Project Name</a>
-                <a href="/projects/projectname.html">Project Name</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Java
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="/projects/projectname.html">Project Name</a>
-                <a href="/projects/projectname.html">Project Name</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Php
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="/projects/projectname.html">Project Name</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">JavaScript
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="/projects/projectname.html">Project Name</a>
-            </div>
-        </div>
-
-        <a href="javascript:void(0);" class="icon " onclick="ToggleResponsive()">
-            <i class="fa fa-bars" id="topnav-toggle-icon"></i>
-            <!--        <i class="fa fa-close"></i>-->
-        </a>
-    </div>
-    <div class="progress-container">
-        <div class="progress-bar" id="progress-bar"></div>
-    </div>
-</header>
-
-
-<section class="main">
-
-    <div class="" id="intro">
-        <h1>Portfolio</h1>
+<section class="bar pilar flex-horizontal" id="split-background">
+    <div class="split left relative">
+        <div class="bg blur2 pilar img-poly-light"></div>
     </div>
 
-    <section class="align-center center-width" id="projects">
-
-        <h3>My Projects</h3>
-
-        <div id="FilterBtnContainer">
-            <button class="btn-filter active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn-filter" onclick="filterSelection('unity')"> Unity</button>
-            <button class="btn-filter" onclick="filterSelection('unreal')"> Unreal</button>
-            <button class="btn-filter" onclick="filterSelection('java')"> Java</button>
-            <button class="btn-filter" onclick="filterSelection('php')"> Php</button>
-            <button class="btn-filter" onclick="filterSelection('javascript')"> JavaScript</button>
-        </div>
-
-        <!-- Projects Gallery Grid -->
-        <div class="row">
-        <!-- UNITY ++++++++++++++++++++++++ -->
-            <div class="column unity">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="Mountains" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Unity !!!</p>
-                </div>
-            </div>
-            <div class="column unity">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="Lights" style="width:100%">
-                    <h4>Project 2</h4>
-                    <p>Unity !!!</p>
-                </div>
-            </div>
-            <div class="column unity">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="Nature" style="width:100%">
-                    <h4>Project 3</h4>
-                    <p>Unity !!!</p>
-                </div>
-            </div>
-
-            <!-- UNREAL ++++++++++++++++++++++++ -->
-            <div class="column unreal">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="Car" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Unreal !!!</p>
-                </div>
-            </div>
-            <div class="column unreal">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="Car" style="width:100%">
-                    <h4>Project 2</h4>
-                    <p>Unreal !!!</p>
-                </div>
-            </div>
-            <div class="column unreal">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="Car" style="width:100%">
-                    <h4>Project 3</h4>
-                    <p>Unreal !!!</p>
-                </div>
-            </div>
-
-            <!-- JAVA ++++++++++++++++++++++++ -->
-            <div class="column java">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Java !!!</p>
-                </div>
-            </div>
-            <div class="column java">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 2</h4>
-                    <p>Java !!!</p>
-                </div>
-            </div>
-            <div class="column java">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 3</h4>
-                    <p>Java !!!</p>
-                </div>
-            </div>
-
-            <!-- PHP ++++++++++++++++++++++++ -->
-            <div class="column php">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Php !!!</p>
-                </div>
-            </div>
-            <div class="column php">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 2</h4>
-                    <p>Php !!!</p>
-                </div>
-            </div>
-            <div class="column php">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 3</h4>
-                    <p>Php !!!</p>
-                </div>
-            </div>
-
-            <!-- JAVASCRIPT ++++++++++++++++++++++++ -->
-            <div class="column javascript">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>JavaScript !!!</p>
-                </div>
-            </div>
-            <div class="column javascript">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 2</h4>
-                    <p>JavaScript !!!</p>
-                </div>
-            </div>
-            <div class="column javascript">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 3</h4>
-                    <p>JavaScript !!!</p>
-                </div>
-            </div>
-        </div> <!-- End Project Grid -->
-    </section>
-
+<!--    <div class="split right relative">-->
+<!--        <div class="bg blur2 pilar img-poly-dark"></div>-->
+<!--    </div>-->
 
 </section>
 
-<footer class="nav relative bottom bar">
-    <div class="flex-vertical" id="accounts">
-        <div class="flex-horizontal">
-            <a href="https://github.com/Giro4c">
-                <i class="fa fa-github"></i>
-                Giro4c
-            </a>
+<section class="intro-container" id="intro-container">
+    <div class="intro" id="intro">
+        <div class="intro-title" id="intro-title">
+            <h1>Hi &#128075;,</h1>
+            <h2>I'm <b class="cutout">CAMILLE GIRODENGO</b></h2>
         </div>
-        <div class="flex-horizontal">
-            <a href="https://www.linkedin.com/in/camille-girodengo-19669b264/">
-                <i class="fa fa-linkedin-square"></i>
-                 Camille Girodengo
-            </a>
-        </div>
-        <div class="flex-horizontal">
-            <a href=".">
-                <img src="Assets/Icons/icon-aaaa.png"/>
-                AAAA
-            </a>
+        <div class="intro-content" id="intro-content">
+            <p>And I study <b class="cutout">Gameplay Programming</b> at UQAC</p>
         </div>
     </div>
-</footer>
+</section>
 
-<script src="Assets/Scripts/topnav.js"></script>
-<script src="Assets/Scripts/grid.js"></script>
-<script src="Assets/Scripts/progressbar.js"></script>
 
+<section id="home-sidenav">
+    <section class="sidenav quarter-pilar left bottom">
+        <a href="/Portfolio/aboutme.html" id="about" class="nav-btn"><b><span class="before">About Me </span></b></a>
+    </section>
+
+    <section class="sidenav quarter-pilar right bottom">
+        <a href="/Portfolio/projects.html" id="projects" class="nav-btn"><b><span class="after">My Projects </span></b></a>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <a href="https://github.com/Giro4c">
+            <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/camille-girodengo-19669b264/">
+            <i class="fa fa-linkedin-square"></i>
+        </a>
+    </section>
+</section>
+
+
+<!--<div class="fixed top bar half-pilar test1 test2">HELLO WORLD !</div>-->
 
 </body>
 </html>

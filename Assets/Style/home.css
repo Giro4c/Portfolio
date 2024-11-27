@@ -1,3 +1,152 @@
-body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0.35)), url("../Images/poly-light.jpeg");
+.bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-btn {
+    border-radius: 25px;
+    /*background-color: #419cb4;*/
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #FFFFFF;
+    /*color: #000000;*/
+    text-align: center;
+    font-size: 28px;
+    /*padding: 20px;*/
+    /*width: 250px;*/
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.nav-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.nav-btn span.after:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.nav-btn span.before:before {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.nav-btn:hover span.after {
+    padding-right: 25px;
+}
+
+.nav-btn:hover span.before {
+    padding-left: 25px;
+}
+
+.nav-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.nav-btn:hover span:before {
+    opacity: 1;
+    left: 0;
+}
+
+#intro-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /*height: 100%;*/
+    padding-top: 20vh;
+    /*padding: 25%;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin: 0 auto;
+}
+
+#intro {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#intro *:not(.cutout) {
+    color: black;
+}
+
+#intro-title {
+    height: 35vh;
+    width: 50%;
+    padding: 10px 10px;
+    border: rgb(65, 156, 180) 10px dashed;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#intro-title h1 {
+    margin: 0;
+    font-size: 10vh;
+    /*font-size: ;*/
+}
+
+#intro-title h2 {
+    margin: 0;
+    /*font-size: 6vh;*/
+    font-size: 6vh;
+}
+
+#intro-content {
+    text-align: center;
+    max-width: 140%;
+}
+
+#about {
+    background-color: #c0bb09;
+}
+
+#projects {
+    background-color: #3c8ce8;
+}
+
+#contacts {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 15%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contacts > * {
+    /*font-size: 25px;*/
+    /*font-size: 50px;*/
+    font-size: 5vw;
 }
