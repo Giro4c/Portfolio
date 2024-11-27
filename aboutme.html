@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Home</title>
+    <title>About Me</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" href="Assets/Style/common.css">
+    <link rel="stylesheet" href="Assets/Style/aboutme.css">
     <link rel="stylesheet" href="Assets/Style/topnav.css">
     <link rel="stylesheet" href="Assets/Style/progressbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<header>
-
-    <h1>About Me</h1>
-
-</header>
-
 <nav class="sticky top bar" >
     <div class="nav" id="topnav">
         <a href="/Portfolio/index.html">Home</a>
-        <button class="dropbtn">
-            About Me
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="#presentation">Presentation</a>
-            <a href="#experiences">Experiences</a>
-            <a href="#academics">Academics</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                About Me
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#presentation">Presentation</a>
+                <a href="#experiences">Experiences</a>
+                <a href="#academics">Academics</a>
+            </div>
         </div>
         <a href="/Portfolio/projects.html">Projects</a>
 
@@ -42,7 +39,40 @@
 
 <section class="main">
 
+    <section id="presentation-container">
+        <div>
+            <h1 id="presentation">About Me</h1>
+            <p>
+                Camille Girodengo, student in double diplomation for a BUT in Computer Science (Application development) (France),
+                and a Bac in Video Game Programming at UQAC (Quebec).
+                aaaaaaaaaaaaaaaaaaaaaaa aaaaaaaa diufhe ezài z zo_rçér  )çr
+            </p>
+        </div>
+        <div class="profile picture">
+            <img src="Assets/Icons/LogoOlaee.png">
+        </div>
+    </section>
 
+    <section id="experiences-container">
+        <div>
+            <h2 id="experiences">My experiences</h2>
+            <p>
+                Camille Girodengo, student in double diplomation for a BUT in Computer Science (Application development) (France),
+                and a Bac in Video Game Programming at UQAC (Quebec).
+                aaaaaaaaaaaaaaaaaaaaaaa aaaaaaaa diufhe ezài z zo_rçér  )çr
+            </p>
+        </div>
+        <div class="projects pictures">
+<!--            Images Carousel-->
+        </div>
+    </section>
+
+    <section id="academics-container">
+        <h2 id="academics">My Academic & Professional Journey</h2>
+        <div class="timeline">
+
+        </div>
+    </section>
 
 </section>
 
@@ -60,19 +90,11 @@
                  Camille Girodengo
             </a>
         </div>
-        <div class="flex-horizontal">
-            <a href=".">
-                <img src="Assets/Icons/icon-aaaa.png"/>
-                AAAA
-            </a>
-        </div>
     </div>
 </footer>
 
 <script src="Assets/Scripts/topnav.js"></script>
-<script src="Assets/Scripts/grid.js"></script>
 <script src="Assets/Scripts/progressbar.js"></script>
-
 
 </body>
 </html>
