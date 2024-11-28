@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Assets/Style/aboutme.css">
     <link rel="stylesheet" href="Assets/Style/topnav.css">
     <link rel="stylesheet" href="Assets/Style/progressbar.css">
+    <link rel="stylesheet" href="Assets/Style/slideshow.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -63,7 +64,40 @@
             </p>
         </div>
         <div class="projects pictures">
-<!--            Images Carousel-->
+            <!-- Slideshow container -->
+            <div class="slideshow-container" id="exp-slideshow">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="slides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Assets/Images/poly-dark.JPG" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="slides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Assets/Images/poly-light.JPG" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="slides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Assets/Images/poly-winter.JPG" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1, 'exp-slideshow')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'exp-slideshow')">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="showSlides(0, 'exp-slideshow')"></span>
+                <span class="dot" onclick="showSlides(1, 'exp-slideshow')"></span>
+                <span class="dot" onclick="showSlides(2, 'exp-slideshow')"></span>
+            </div>
         </div>
     </section>
 
@@ -95,6 +129,7 @@
 
 <script src="Assets/Scripts/topnav.js"></script>
 <script src="Assets/Scripts/progressbar.js"></script>
+<script src="Assets/Scripts/slideshow.js"></script>
 
 </body>
 </html>
