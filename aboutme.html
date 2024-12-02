@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="Assets/Style/topnav.css">
     <link rel="stylesheet" href="Assets/Style/progressbar.css">
     <link rel="stylesheet" href="Assets/Style/slideshow.css">
+    <link rel="stylesheet" href="Assets/Style/timeline.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<nav class="sticky top bar" >
+<nav class="fixed top bar" >
     <div class="nav" id="topnav">
         <a href="/Portfolio/index.html">Home</a>
         <div class="dropdown">
@@ -40,8 +41,8 @@
 
 <section class="main">
 
-    <section id="presentation-container">
-        <div>
+    <section class="flex-horizontal reverse" id="presentation-container">
+        <div class="flex-vertical" id="presentation-content">
             <h1 id="presentation">About Me</h1>
             <p>
                 Camille Girodengo, student in double diplomation for a BUT in Computer Science (Application development) (France),
@@ -49,13 +50,15 @@
                 aaaaaaaaaaaaaaaaaaaaaaa aaaaaaaa diufhe ezài z zo_rçér  )çr
             </p>
         </div>
-        <div class="profile picture">
+        <div class="profile-picture" id="profile-pic">
             <img src="Assets/Icons/LogoOlaee.png">
         </div>
     </section>
 
-    <section id="experiences-container">
-        <div>
+    <hr>
+
+    <section id="experiences-container" class="flex-horizontal">
+        <div class="flex-vertical" id="experiences-content">
             <h2 id="experiences">My experiences</h2>
             <p>
                 Camille Girodengo, student in double diplomation for a BUT in Computer Science (Application development) (France),
@@ -63,7 +66,7 @@
                 aaaaaaaaaaaaaaaaaaaaaaa aaaaaaaa diufhe ezài z zo_rçér  )çr
             </p>
         </div>
-        <div class="projects pictures">
+        <div class="projects-pics">
             <!-- Slideshow container -->
             <div class="slideshow-container" id="exp-slideshow">
 
@@ -101,10 +104,25 @@
         </div>
     </section>
 
-    <section id="academics-container">
-        <h2 id="academics">My Academic & Professional Journey</h2>
-        <div class="timeline">
+    <hr>
 
+    <section id="academics-container" class="flex-vertical">
+        <h2 id="academics">My Academic & Professional Journey</h2>
+        <div class="timeline-container" id="academics-content">
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h3>2017</h3>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h3>2016</h3>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

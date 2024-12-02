@@ -1,4 +1,8 @@
-/* Add a black background color to the top navigation */
+/* Ensure that nothing will go over the nav */
+nav.fixed, nav.sticky {
+    z-index: 99;
+}
+
 .nav {
     background-color: #333;
     overflow: hidden;

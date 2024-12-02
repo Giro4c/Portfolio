@@ -93,6 +93,10 @@ body {
     justify-content: left;
 }
 
+.flex-vertical.reverse {
+    flex-direction: column-reverse;
+}
+
 .flex-vertical > * {
     width: 100%;
     height: inherit;
@@ -107,6 +111,10 @@ body {
 .flex-horizontal > * {
     height: 100%;
     width: inherit;
+}
+
+.flex-horizontal.reverse {
+    flex-direction: row-reverse;
 }
 
 .align-center {
