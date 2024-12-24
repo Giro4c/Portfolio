@@ -12,3 +12,46 @@
     margin: auto 4vw;
     top: 33%;
 }
+
+.main {
+    margin: 15px;
+}
+
+h2 {
+    /*font-size: 60px;*/
+    font-size: 6.5vh;
+    max-font-size: 65px;
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+    /*font-size: 3vw;*/
+    font-size: 18px;
+}
+
+/* CONTEXT */
+
+#context {
+    min-height: 35vh;
+    height: auto;
+    gap: 15px;
+    align-items: center;
+    /*justify-content: space-evenly;*/
+    /*width: 90%;*/
+}
+
+#context-content {
+    width: auto;
+    min-width: 40%;
+    max-width: 70%;
+}
+
+#context-image {
+    max-width: 40%;
+    min-width: 30%;
+}
+
+#context-image img {
+    width: 100%;
+}
