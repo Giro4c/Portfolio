@@ -90,3 +90,22 @@ p {
         width: 100%;
     }
 }
+
+/* DESCRIPTION */
+
+#description {
+    gap: 15px;
+    align-items: center;
+    min-height: 35vh;
+    height: auto;
+}
+
+#description-content {
+    max-width: 75%;
+}
+
+.slideshow-container {
+    max-width: 50%;
+    max-height: 90vh;
+    min-height: 50vh;
+}
