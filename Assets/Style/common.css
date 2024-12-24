@@ -17,6 +17,11 @@ body {
     margin: 8px auto;
 }
 
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
 .fixed {
     position: fixed;
 }
