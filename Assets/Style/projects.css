@@ -1,3 +1,4 @@
 body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0.35)), url("../Images/poly-light.jpeg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url("../Images/poly-light.jpeg");
 }
+
