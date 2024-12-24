@@ -55,3 +55,38 @@ p {
 #context-image img {
     width: 100%;
 }
+
+/* TEAM */
+
+#team {
+    min-height: 35vh;
+    height: auto;
+    align-items: center;
+}
+
+#team-content {
+    width: auto;
+    min-width: 40%;
+    /*max-width: 90%;*/
+    gap: 15px;
+    align-items: center;
+    /*justify-content: space-evenly;*/
+}
+
+#team .column {
+    width: 25%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 600px) {
+    #team .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    #team .column {
+        width: 100%;
+    }
+}
