@@ -1,0 +1,88 @@
+.main {
+    margin: 45px auto 15px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    /*font-size: 9vw;*/
+    max-font-size: 65px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 50px;
+    /*font-size: 9vw;*/
+    max-font-size: 65px;
+    margin: 10px 0;
+
+}
+
+p {
+    margin: 5px 0;
+    /*font-size: 3vw;*/
+    font-size: 20px;
+}
+
+#presentation-container {
+    min-height: 35vh;
+    height: auto;
+    gap: 15px;
+    align-items: center;
+    /*justify-content: space-evenly;*/
+}
+
+#presentation-content {
+    width: auto;
+    max-width: 75%;
+}
+
+#profile-pic {
+    max-width: 50%;
+    min-width: 35%;
+
+}
+
+#profile-pic img {
+    width: 100%;
+}
+
+
+#experiences-container {
+    gap: 15px;
+    align-items: center;
+
+}
+
+#experiences {
+    text-align: left;
+    /*padding-left: 10px;*/
+    /*padding-left: 15%;*/
+}
+
+#experiences-content {
+    max-width: 75%;
+}
+
+.slideshow-container {
+    max-width: 50%;
+    max-height: 90vh;
+    min-height: 50vh;
+}
+
+#academics {
+    text-align: right;
+}
+
+#academics-container {
+    gap: 15px;
+}
+
+hr {
+    margin: 7px 25%;
+    border-top: 4px solid black;
+    border-radius: 4px;
+
+}
