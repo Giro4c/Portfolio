@@ -1,0 +1,14 @@
+#project-header {
+    height: 20vh;
+}
+
+#project-header *:not(.cutout) {
+    color: black;
+}
+
+#project-header h1 {
+    font-size: 6vh;
+    height: fit-content;
+    margin: auto 4vw;
+    top: 33%;
+}

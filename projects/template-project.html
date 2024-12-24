@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Name</title>
+    <link rel="stylesheet" href="../Assets/Style/common.css">
+    <link rel="stylesheet" href="../Assets/Style/topnav.css">
+    <link rel="stylesheet" href="../Assets/Style/progressbar.css">
+    <link rel="stylesheet" href="../Assets/Style/slideshow.css">
+    <link rel="stylesheet" href="../Assets/Style/project.css">
+</head>
+<body>
+
+<nav class="sticky top bar" >
+    <div class="nav" id="topnav">
+        <a href="/Portfolio/index.html">Home</a>
+        <a href="/Portfolio/aboutme.html">About Me</a>
+        <a href="/Portfolio/projects.html">Projects</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Project Name
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#context">Context</a>
+                <a href="#team">Team</a>
+                <a href="#description">Description</a>
+                <a href="#contribution">Contribution</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon " onclick="ToggleResponsive()">
+            <i class="fa fa-bars" id="topnav-toggle-icon"></i>
+        </a>
+    </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+</nav>
+
+<section class="bar flex-vertical relative center-height" id="project-header">
+    <div class="relative">
+        <div class="bg blur2 pilar img-poly-light"></div>
+    </div>
+    <h1 class="absolute"><b class="cutout">PROJECT NAME</b></h1>
+</section>
+
+<section class="main">
+
+
+
+</section>
+
+<footer class="nav relative bottom bar">
+    <div class="flex-vertical" id="accounts">
+        <div class="flex-horizontal">
+            <a href="https://github.com/Giro4c">
+                <i class="fa fa-github"></i>
+                Giro4c
+            </a>
+        </div>
+        <div class="flex-horizontal">
+            <a href="https://www.linkedin.com/in/camille-girodengo-19669b264/">
+                <i class="fa fa-linkedin-square"></i>
+                Camille Girodengo
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="../Assets/Scripts/topnav.js"></script>
+<script src="../Assets/Scripts/progressbar.js"></script>
+<script src="../Assets/Scripts/slideshow.js"></script>
+
+</body>
+</html>
