@@ -16,7 +16,7 @@ if (slideshows.length !== 0){
         showSlides(0, slideshows[i].id);
     }
 }
-console.log(slides);
+// console.log(slides);
 
 function incrementSlides(id) {
     plusSlides(1, id);
@@ -27,16 +27,16 @@ function plusSlides(increment, id) {
 }
 
 function showSlides(num, id) {
-    console.log(id);
-    console.log(slides.get(id));
+    // console.log(id);
+    // console.log(slides.get(id));
 
     // Clear current timeout if exists
     if (slides.get(id).handle > -1){
         clearTimeout(slides.get(id).handle);
-        console.log("CLEAR timeout of slideshow")
+        // console.log("CLEAR timeout of slideshow")
     }
     else {
-        console.log("LEAVE timeout of slideshow")
+        // console.log("LEAVE timeout of slideshow")
     }
 
     // Get the slide container whose display to update

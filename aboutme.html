@@ -143,14 +143,14 @@
                         <h3>October 2024</h3>
                         <p class="preview-title">WonderJam A24</p>
                         <div class="read-more-section">
-                            <button class="read-more-button">Read More</button>
+                            <button class="read-more-button" onclick="readToggle(this)">Read More</button>
                             <p class="preview-content hidden">
                                 A Game Jam organized by the student association at UQAC that lasts 2 days.
                                 <br>
                                 Also my first jam ever. Since we didn't have enough experience with Unreal Engine to produce
                                 a game in time, my team and I used Unity to make ours.
                             </p>
-                            <button class="read-less-button hidden">Read Less</button>
+                            <button class="read-less-button hidden" onclick="readToggle(this)">Read Less</button>
                         </div>
                     </div>
                 </div>
@@ -159,14 +159,14 @@
                         <h3>2024-2025</h3>
                         <p class="preview-title">3rd Year of Bachelor's degree in video games programming through the exchange program at UQAC</p>
                         <div class="read-more-section">
-                            <button class="read-more-button">Read More</button>
+                            <button class="read-more-button" onclick="readToggle(this)">Read More</button>
                             <p class="preview-content hidden">
                                 Through an accord between my university of origin (Aix-Marseille University) and UQAC, I was
                                 allowed, after approval of my application, to do my third year in university in Canada, Québec.
                                 At the end of the year, I will obtain both Third Year University degrees in Computer Science
                                 (France) and Video Game Development (Canada).
                             </p>
-                            <button class="read-less-button hidden">Read Less</button>
+                            <button class="read-less-button hidden" onclick="readToggle(this)">Read Less</button>
                         </div>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                         <h3>April-July 2024</h3>
                         <p class="preview-title">Internship at the CRVM</p>
                         <div class="read-more-section">
-                            <button class="read-more-button">Read More</button>
+                            <button class="read-more-button" onclick="readToggle(this)">Read More</button>
                             <p class="preview-content hidden">
                                 My first internship in the domain of computer science and application development. I mostly
                                 worked with the Unity Engine and the Meta XR API.
@@ -183,7 +183,7 @@
                                 Though I also learned to connect to BLE devices by creating my own Java plugin which allows
                                 an app to read and write data from GATT characteristics.
                             </p>
-                            <button class="read-less-button hidden">Read Less</button>
+                            <button class="read-less-button hidden" onclick="readToggle(this)">Read Less</button>
                         </div>
 
                     </div>
@@ -229,6 +229,7 @@
 <script src="Assets/Scripts/topnav.js"></script>
 <script src="Assets/Scripts/progressbar.js"></script>
 <script src="Assets/Scripts/slideshow.js"></script>
+<script src="Assets/Scripts/read-section.js"></script>
 
 </body>
 </html>
