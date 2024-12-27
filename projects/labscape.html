@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Labscape</title>
+    <link rel="stylesheet" href="../Assets/Style/common.css">
+    <link rel="stylesheet" href="../Assets/Style/topnav.css">
+    <link rel="stylesheet" href="../Assets/Style/progressbar.css">
+    <link rel="stylesheet" href="../Assets/Style/slideshow.css">
+    <link rel="stylesheet" href="../Assets/Style/grid.css">
+    <link rel="stylesheet" href="../Assets/Style/grid-cards.css">
+    <link rel="stylesheet" href="../Assets/Style/grid-gallery.css">
+    <link rel="stylesheet" href="../Assets/Style/project.css">
+    <link rel="stylesheet" href="../Assets/Style/projects/labscape.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="bar flex-vertical relative center-height" id="project-header">
+    <div class="relative">
+        <div class="bg blur2 pilar img-poly-light"></div>
+    </div>
+    <h1 class="absolute"><b class="cutout">LABSCAPE</b></h1>
+</section>
+
+<nav class="sticky top bar" >
+    <div class="nav" id="topnav">
+        <a href="/Portfolio/index.html">Home</a>
+        <a href="/Portfolio/aboutme.html">About Me</a>
+        <a href="/Portfolio/projects.html">Projects</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Labscape
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#context">Context</a>
+                <a href="#team">Team</a>
+                <a href="#description">Description</a>
+                <a href="#contribution">Contribution</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon " onclick="ToggleResponsive()">
+            <i class="fa fa-bars" id="topnav-toggle-icon"></i>
+        </a>
+    </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+</nav>
+
+<section class="main">
+
+    <section id="context" class="flex-horizontal">
+        <div id="context-content" class="flex-vertical">
+            <h2>Context</h2>
+            <p>
+                Labscape is a VR demo game made with Unity engine and the technologies of hand tracking for Meta Quest
+                headsets. Made by the intern team of the CRVM in 3 weeks, this project's purpose was to show off the
+                possibilities of virtual reality, including the feelings of immersion provided by hand tracking, to the
+                participants of a visiting summer camp on XR.
+                <br>
+                This realization was my first introduction to game production in the professional field and collaborating
+                with people of different specialties (2D & 3D Art, Game Design) also made me discover how to make various
+                VR interactions using hand tracking and poses. This game is in fact one of my favorite projects to date.
+            </p>
+        </div>
+        <div id="context-image"><img src="../Assets/Icons/LogoOlaee.png"></div>
+
+    </section>
+
+    <section id="team" class="flex-vertical">
+        <h2> The Team : </h2>
+        <div id="team-content" class="align-center center-width">
+            <div class="row grid-cards">
+                <div class="column show grid-cards">
+                    <div class="content">
+                        <img src="../Assets/Icons/LogoOlaee.png" alt="Profile Picture" style="width:100%">
+                        <h4>Alexander Ferreira</h4>
+                        <p>Designer UI/UX and Audio</p>
+                    </div>
+                </div>
+                <div class="column show grid-cards">
+                    <div class="content">
+                        <img src="../Assets/Icons/LogoOlaee.png" alt="Profile Picture" style="width:100%">
+                        <h4>Yacine Zerenini</h4>
+                        <p>Designer 3D</p>
+                    </div>
+                </div>
+                <div class="column show grid-cards">
+                    <div class="content">
+                        <img src="../Assets/Icons/LogoOlaee.png" alt="Profile Picture" style="width:100%">
+                        <h4>Romain Brieussel</h4>
+                        <p>Game Designer & Support Programmer</p>
+                    </div>
+                </div>
+                <div class="column show grid-cards">
+                    <div class="content">
+                        <img src="../Assets/Icons/LogoOlaee.png" alt="Profile Picture" style="width:100%">
+                        <h4>Camille Girodengo (Me)</h4>
+                        <p>Main Programmer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="description" class="flex-horizontal reverse">
+        <div class="flex-vertical half-bar" id="description-content">
+            <h2>Description</h2>
+            <p>
+                Labscape is a short VR escape game using Hand Tracking in which the player is trapped in a futuristic
+                abandoned laboratory in space and must find a way to escape. To do so, the player has to solve various
+                little puzzles and challenges showcasing VR interaction and physics mechanics such as grabbing objects
+                (with life-like movements or at a distance), moving around, activating touch terminals, shooting with a
+                gun, changing gravity, etc…
+                <br>
+                The game can be finished relatively fast as it is a demo and only has 2 main rooms : the Lab Hub for the
+                interactions showcase and the Labyrinth for movement and others.
+            </p>
+        </div>
+        <div id="description-media" class="half-bar">
+            <div class="ratio16-9">
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/TdAIsdx_SPk?si=lYmuevhydPb75znp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contribution" class="flex-vertical">
+        <h2>Contribution</h2>
+        <div id="contribution-content" class="center-width">
+            <div class="row grid-gallery">
+                <div class="column grid-gallery">
+                    <p>
+                        As the main gameplay programmer I developed most features in this game, the main ones being the
+                        garb interaction, the hand poses for each type of object, the locks and the ways to open them,
+                        the shooter and an assembly puzzle.
+                    </p>
+                </div>
+                <div class="column grid-gallery">
+                    <div class="slideshow-container" id="slideshow-container-1">
+                        <!-- Slideshow -->
+                        <div class="slideshow" id="slideshow-1">
+
+                            <!-- Full-width images with number and caption text -->
+                            <div class="slides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="../Assets/Images/poly-dark.JPG">
+                                <div class="text">Caption Text</div>
+                            </div>
+
+                            <div class="slides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="../Assets/Images/poly-light.jpg">
+                                <div class="text">Caption Two</div>
+                            </div>
+
+                            <div class="slides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="../Assets/Images/poly-winter.JPG">
+                                <div class="text">Caption Three</div>
+                            </div>
+
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1, 'slideshow-1')">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 'slideshow-1')">&#10095;</a>
+                        </div>
+                        <br>
+                        <!-- The dots/circles -->
+                        <div class="dots-container" style="text-align:center">
+                            <span class="dot" onclick="showSlides(0, 'slideshow-1')"></span>
+                            <span class="dot" onclick="showSlides(1, 'slideshow-1')"></span>
+                            <span class="dot" onclick="showSlides(2, 'slideshow-1')"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column100 grid-gallery">
+                    <p>
+                        I also coded the audio manager for the background music and the tutorial voice as well as the
+                        gravity feature actionable through touch terminals, terminals which I reused for one of the
+                        challenges which consisted of activating 3 terminals in a limited time. Said challenge can be
+                        adapted to allow timer reset (challenge-global or terminal-local) after an activation.
+                        <br>
+                        Among all those features, the most challenging were the shooter and the assembly puzzle, though
+                        the lock took me some time due to all the types that exist for this game (singular key, simultaneous
+                        keys, key count, challenge related, etc…).
+                    </p>
+                </div>
+                <div class="column grid-gallery">
+                    <img src="../Assets/Icons/LogoOlaee.png">
+                </div>
+                <div class="column grid-gallery">
+                    <p>
+                        The shooter was the feature I had the most fun developing. The actual shooting of a projectile
+                        wasn’t actually the issue but more how to trigger the action with hand poses since I had never
+                        done such a feature before or anything else using hand tracking for that matter. To learn how to
+                        do it, I had to look into the code of a water spray feature found in a template feature from
+                        the Meta API. I based my code on the “usage” script after which all that was left to do was the
+                        hand poses for the idle and trigger.
+                    </p>
+                </div>
+                <div class="column grid-gallery">
+                    <p>
+                        The actual most time-consuming and difficult feature I had to make was the assembly puzzle where
+                        the player must place objects in specific slots to reconstruct an object. This feature would have
+                        taken far less time had I had access to snap zones but did not. Indeed, at the time this project
+                        was made, the Meta XR API did not allow for a project to also include the OpenXR API which
+                        coincidentally has said snap zones I wanted to use.
+                        <br>
+                        Because of that, I had to create my own home-made
+                        snap zone system and base my puzzle feature on it. I had to do my best to take all interaction
+                        cases into account and the multiple ways an object could “attach” to a zone and the related conflicts
+                        like which zone to attach the object to in case it’s in contact with more than one for example.
+                    </p>
+                </div>
+                <div class="column grid-gallery">
+                    <img src="../Assets/Icons/LogoOlaee.png">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</section>
+
+<footer class="nav relative bottom bar">
+    <div class="flex-vertical" id="accounts">
+        <div class="flex-horizontal">
+            <a href="https://github.com/Giro4c">
+                <i class="fa fa-github"></i>
+                Giro4c
+            </a>
+        </div>
+        <div class="flex-horizontal">
+            <a href="https://www.linkedin.com/in/camille-girodengo-19669b264/">
+                <i class="fa fa-linkedin-square"></i>
+                Camille Girodengo
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="../Assets/Scripts/topnav.js"></script>
+<script src="../Assets/Scripts/progressbar.js"></script>
+<script src="../Assets/Scripts/slideshow.js"></script>
+
+</body>
+</html>
