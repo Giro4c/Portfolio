@@ -1,5 +1,5 @@
 const TimeInterval = 10000;
-let slideshows = document.getElementsByClassName("slideshow-container");
+let slideshows = document.getElementsByClassName("slideshow");
 // console.log(slideshows.length);
 let slides = new Map();
 if (slideshows.length !== 0){
