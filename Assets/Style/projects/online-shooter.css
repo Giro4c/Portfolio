@@ -1,0 +1,7 @@
+.column.grid-gallery > * {
+    align-self: center;
+}
+
+.column.grid-gallery {
+    padding: 10px;
+}
