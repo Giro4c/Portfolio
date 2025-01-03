@@ -1,3 +1,29 @@
 #description-content {
     max-width: 100%;
 }
+
+.column.grid-gallery > * {
+    align-self: center;
+}
+
+.column.grid-gallery {
+    padding: 10px;
+}
+
+#description .media.icon {
+    max-width: 30%;
+    min-width: 200px;
+}
+
+#android-icon {
+    max-width: 15%;
+    min-width: 100px;
+}
+
+#popup-location {
+    max-width: 40%;
+}
+
+#popup-connect {
+    max-width: 40%;
+}

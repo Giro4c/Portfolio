@@ -27,7 +27,14 @@ h2 {
     margin: 10px 0;
 }
 
-.main p {
+h3 {
+    /*font-size: 60px;*/
+    font-size: 4.8vh;
+    max-font-size: 50px;
+    margin: 10px 0;
+}
+
+.main p, .main ul {
     margin: 5px 0;
     font-size: 3.3vh;
     /*font-size: 18px;*/
@@ -40,7 +47,7 @@ h2 {
 }*/
 
 @media (orientation: portrait) {
-    .main p {
+    .main p, .main ul {
         font-size: 3.3vw;
     }
 }
