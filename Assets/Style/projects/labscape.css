@@ -6,14 +6,9 @@
     padding: 10px;
 }
 
-#context-content {
-    max-width: 100%;
-}
-
-#context-media {
-    /*max-width: 40%;*/
-    max-width: 300px;
-}
+/*#context-media {*/
+/*    max-width: 300px;*/
+/*}*/
 
 #context {
     align-items: flex-start;
