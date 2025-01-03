@@ -105,22 +105,22 @@
         </div>
     </section>
 
-    <section id="description" class="flex-horizontal reverse">
-        <div class="flex-vertical half-bar" id="description-content">
-            <h2>Description</h2>
-            <p>
-                Labscape is a short VR escape game using Hand Tracking in which the player is trapped in a futuristic
-                abandoned laboratory in space and must find a way to escape. To do so, the player has to solve various
-                little puzzles and challenges showcasing VR interaction and physics mechanics such as grabbing objects
-                (with life-like movements or at a distance), moving around, activating touch terminals, shooting with a
-                gun, changing gravity, etc…
-                <br>
-                The game can be finished relatively fast as it is a demo and only has 2 main rooms : the Lab Hub for the
-                interactions showcase and the Labyrinth for movement and others.
-            </p>
-        </div>
-        <div id="description-media" class="half-bar">
-            <div class="ratio1-1">
+    <section id="description" class="flex-vertical" style="gap: 20px">
+        <div class="flex-horizontal reverse" style="gap: 20px">
+            <div class="flex-vertical" style="height: auto; justify-content: space-evenly;">
+                <h2>Description</h2>
+                <p>
+                    Labscape is a short VR escape game using Hand Tracking in which the player is trapped in a futuristic
+                    abandoned laboratory in space and must find a way to escape. To do so, the player has to solve various
+                    little puzzles and challenges showcasing VR interaction and physics mechanics such as grabbing objects
+                    (with life-like movements or at a distance), moving around, activating touch terminals, shooting with a
+                    gun, changing gravity, etc…
+                    <br>
+                    The game can be finished relatively fast as it is a demo and only has 2 main rooms : the Lab Hub for the
+                    interactions showcase and the Labyrinth for movement and others.
+                </p>
+            </div>
+            <div class="ratio1-1" id="labscape-demo">
                 <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/d7CuX5xwvzg?si=fNqiguFTzlLrKVds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
@@ -130,38 +130,28 @@
 
                 <!-- Full-width images with number and caption text -->
                 <div class="slides fade">
-                    <div class="numbertext">1 / 4</div>
                     <img src="../Assets/Images/labscape/lab1.png">
-                    <div class="text">Lab</div>
+<!--                    <div class="text">Lab</div>-->
                 </div>
 
                 <div class="slides fade">
-                    <div class="numbertext">2 / 4</div>
                     <img src="../Assets/Images/labscape/lab2.png">
-                    <div class="text">Lab</div>
+<!--                    <div class="text">Lab</div>-->
                 </div>
 
                 <div class="slides fade">
-                    <div class="numbertext">3 / 4</div>
                     <img src="../Assets/Images/labscape/maze1.png">
-                    <div class="text">Maze</div>
+<!--                    <div class="text">Maze</div>-->
                 </div>
 
                 <div class="slides fade">
-                    <div class="numbertext">4 / 4</div>
                     <img src="../Assets/Images/labscape/maze2.png">
-                    <div class="text">Maze</div>
+<!--                    <div class="text">Maze</div>-->
                 </div>
 
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1, 'slideshow-3')">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 'slideshow-3')">&#10095;</a>
-            </div>
-            <br>
-            <!-- The dots/circles -->
-            <div class="dots-container" style="text-align:center">
-                <span class="dot" onclick="showSlides(0, 'slideshow-3')"></span>
-                <span class="dot" onclick="showSlides(1, 'slideshow-3')"></span>
             </div>
         </div>
     </section>
@@ -170,87 +160,69 @@
         <h2>Contribution</h2>
         <div id="contribution-content" class="center-width">
             <div class="row grid-gallery">
-                <div class="column grid-gallery">
-                    <p>
-                        As the main gameplay programmer I developed most features in this game, the main ones being the
-                        garb interaction, the hand poses for each type of object, the locks and the ways to open them,
-                        the shooter and an assembly puzzle.
-                    </p>
+                <div class="column100 grid-gallery flex-horizontal" style="justify-content: center; align-items: center; gap: 20px">
+                    <div id="contribution-intro" style="max-width: 60%; height: fit-content; padding-bottom: 20px">
+                        <p style="">
+                            As the main gameplay programmer I developed most features in this game, the main ones being the
+                            garb interaction, the hand poses for each type of object, the locks and the ways to open them,
+                            the shooter and an assembly puzzle.
+                        </p>
+                    </div>
+                    <div style="align-self: center;">
+                        <div class="slideshow-container" id="slideshow-container-4">
+                            <!-- Slideshow -->
+                            <div class="slideshow" id="slideshow-4">
+
+                                <!-- Full-width images -->
+                                <div class="slides fade">
+                                    <img src="../Assets/Images/labscape/hand-pose-1.png">
+                                </div>
+
+                                <div class="slides fade">
+                                    <img src="../Assets/Images/labscape/hand-pose-2.png">
+                                </div>
+
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1, 'slideshow-4')">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 'slideshow-4')">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="column grid-gallery">
-                    <div class="slideshow-container" id="slideshow-container-1">
+
+                <div class="column100 grid-gallery">
+                    <div class="slideshow-container" id="slideshow-container-1" style="margin: 15px auto">
                         <!-- Slideshow -->
                         <div class="slideshow" id="slideshow-1">
 
                             <!-- Full-width images with number and caption text -->
                             <div class="slides fade">
-                                <div class="numbertext">1 / 4</div>
                                 <img src="../Assets/Images/labscape/props1.png">
-                                <div class="text">Props</div>
+<!--                                <div class="text">Props</div>-->
                             </div>
 
                             <div class="slides fade">
-                                <div class="numbertext">2 / 4</div>
                                 <img src="../Assets/Images/labscape/props2.png">
-                                <div class="text">Props</div>
+<!--                                <div class="text">Props</div>-->
                             </div>
 
                             <div class="slides fade">
-                                <div class="numbertext">3 / 4</div>
                                 <img src="../Assets/Images/labscape/key.png">
-                                <div class="text">Key</div>
+<!--                                <div class="text">Key</div>-->
                             </div>
 
                             <div class="slides fade">
-                                <div class="numbertext">4 / 4</div>
                                 <img src="../Assets/Images/labscape/pressure-plate.png">
-                                <div class="text">Pressure Plate</div>
+<!--                                <div class="text">Pressure Plate</div>-->
                             </div>
 
                             <!-- Next and previous buttons -->
                             <a class="prev" onclick="plusSlides(-1, 'slideshow-1')">&#10094;</a>
                             <a class="next" onclick="plusSlides(1, 'slideshow-1')">&#10095;</a>
                         </div>
-                        <br>
-                        <!-- The dots/circles -->
-                        <div class="dots-container" style="text-align:center">
-                            <span class="dot" onclick="showSlides(0, 'slideshow-1')"></span>
-                            <span class="dot" onclick="showSlides(1, 'slideshow-1')"></span>
-                            <span class="dot" onclick="showSlides(2, 'slideshow-1')"></span>
-                            <span class="dot" onclick="showSlides(3, 'slideshow-1')"></span>
-                        </div>
                     </div>
                 </div>
-                <div class="column grid-gallery">
-                    <div class="slideshow-container" id="slideshow-container-4">
-                        <!-- Slideshow -->
-                        <div class="slideshow" id="slideshow-4">
 
-                            <!-- Full-width images with number and caption text -->
-                            <div class="slides fade">
-                                <div class="numbertext">1 / 2</div>
-                                <img src="../Assets/Images/labscape/hand-pose-1.png">
-                                <div class="text">Props</div>
-                            </div>
-
-                            <div class="slides fade">
-                                <div class="numbertext">2 / 2</div>
-                                <img src="../Assets/Images/labscape/hand-pose-2.png">
-                                <div class="text">Props</div>
-                            </div>
-
-                            <!-- Next and previous buttons -->
-                            <a class="prev" onclick="plusSlides(-1, 'slideshow-4')">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1, 'slideshow-4')">&#10095;</a>
-                        </div>
-                        <br>
-                        <!-- The dots/circles -->
-                        <div class="dots-container" style="text-align:center">
-                            <span class="dot" onclick="showSlides(0, 'slideshow-4')"></span>
-                            <span class="dot" onclick="showSlides(1, 'slideshow-4')"></span>
-                        </div>
-                    </div>
-                </div>
                 <div class="column100 grid-gallery">
                     <p>
                         I also coded the audio manager for the background music and the tutorial voice as well as the
@@ -263,6 +235,7 @@
                         keys, key count, challenge related, etc…).
                     </p>
                 </div>
+
                 <div class="column grid-gallery">
                     <div class="slideshow-container" id="slideshow-container-2">
                         <!-- Slideshow -->
@@ -270,30 +243,21 @@
 
                             <!-- Full-width images with number and caption text -->
                             <div class="slides fade">
-                                <div class="numbertext">1 / 2</div>
                                 <img src="../Assets/Images/labscape/shooter1.png">
-                                <div class="text">Idle Shooter</div>
                             </div>
 
                             <div class="slides fade">
-                                <div class="numbertext">2 / 2</div>
                                 <img src="../Assets/Images/labscape/shooter2.png">
-                                <div class="text">Trigger Shooter</div>
                             </div>
 
                             <!-- Next and previous buttons -->
                             <a class="prev" onclick="plusSlides(-1, 'slideshow-2')">&#10094;</a>
                             <a class="next" onclick="plusSlides(1, 'slideshow-2')">&#10095;</a>
                         </div>
-                        <br>
-                        <!-- The dots/circles -->
-                        <div class="dots-container" style="text-align:center">
-                            <span class="dot" onclick="showSlides(0, 'slideshow-2')"></span>
-                            <span class="dot" onclick="showSlides(1, 'slideshow-2')"></span>
-                        </div>
                     </div>
                 </div>
-                <div class="column grid-gallery">
+
+                <div class="column grid-gallery" style="height: auto; margin: auto 0">
                     <p>
                         The shooter was the feature I had the most fun developing. The actual shooting of a projectile
                         wasn’t actually the issue but more how to trigger the action with hand poses since I had never
@@ -303,6 +267,7 @@
                         hand poses for the idle and trigger.
                     </p>
                 </div>
+
                 <div class="column grid-gallery">
                     <p>
                         The actual most time-consuming and difficult feature I had to make was the assembly puzzle where
@@ -316,9 +281,6 @@
                         cases into account and the multiple ways an object could “attach” to a zone and the related conflicts
                         like which zone to attach the object to in case it’s in contact with more than one for example.
                     </p>
-                </div>
-                <div class="column grid-gallery">
-                    <img src="../Assets/Icons/LogoOlaee.png">
                 </div>
             </div>
 

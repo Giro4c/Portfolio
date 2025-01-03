@@ -9,12 +9,15 @@
 #project-header h1 {
     font-size: 6vh;
     height: fit-content;
-    margin: auto 4vw;
+    margin: auto 0;
+    padding: 0 4vw;
     top: 33%;
 }
 
 .main {
-    margin: 15px;
+    margin: 15px auto;
+    padding: 0 15px;
+    max-width: 1200px;
 }
 
 h2 {
@@ -24,10 +27,28 @@ h2 {
     margin: 10px 0;
 }
 
-p {
+.main p {
     margin: 5px 0;
-    /*font-size: 3vw;*/
-    font-size: 18px;
+    font-size: 3.3vh;
+    /*font-size: 18px;*/
+}
+
+/*@media (orientation: landscape) {
+    main p {
+        font-size: 3vh;
+    }
+}*/
+
+@media (orientation: portrait) {
+    .main p {
+        font-size: 3.3vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #team .column {
+        flex: 50%;
+    }
 }
 
 /* CONTEXT */
