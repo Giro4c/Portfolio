@@ -81,5 +81,28 @@ hr {
     margin: 7px 25%;
     border-top: 4px solid black;
     border-radius: 4px;
+}
 
+.download-btn {
+    width: fit-content;
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+/* Darker background on mouse-over */
+.download-btn:hover {
+    background-color: RoyalBlue;
+}
+
+.download-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.download-btn a:visited {
+    color: white;
 }
