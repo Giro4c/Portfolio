@@ -50,7 +50,7 @@ function showSlides(num, id) {
         // If the given slide index surpass the current number of slide, reset the index to start
     if (num >= slideList.length) {slides.get(id).index = 0;}
         // If the given slide index is bellow 0, reset the index to end
-    else if (num < 0) {slides.get(id).index = slideList.length;}
+    else if (num < 0) {slides.get(id).index = slideList.length - 1;}
         // Update the current slide index
     else {slides.get(id).index = num;}
 
