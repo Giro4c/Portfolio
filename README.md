@@ -6,7 +6,7 @@
 ### Version 2
 
 * Dark Mode
-* Downloadable CV
+* ~~Downloadable CV~~
 * Contact Me Form
 * Version Mobile
 
