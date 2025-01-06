@@ -10,3 +10,14 @@ body {
 .column a:visited {
     color: black;
 }
+
+.column {
+    max-width: 33.33%;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
