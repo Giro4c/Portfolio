@@ -61,14 +61,12 @@ p {
     /*padding-left: 15%;*/
 }
 
-#experiences-content {
-    max-width: 75%;
+.projects-pics {
+    max-width: 50%;
 }
 
-.slideshow {
-    max-width: 50%;
-    max-height: 90vh;
-    min-height: 50vh;
+#experiences-content {
+    max-width: 60%;
 }
 
 #academics {
