@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Shooter</title>
+    <link rel="stylesheet" href="../Assets/Style/common.css">
+    <link rel="stylesheet" href="../Assets/Style/topnav.css">
+    <link rel="stylesheet" href="../Assets/Style/progressbar.css">
+    <link rel="stylesheet" href="../Assets/Style/slideshow.css">
+    <link rel="stylesheet" href="../Assets/Style/grid.css">
+    <link rel="stylesheet" href="../Assets/Style/grid-cards.css">
+    <link rel="stylesheet" href="../Assets/Style/grid-gallery.css">
+    <link rel="stylesheet" href="../Assets/Style/project.css">
+    <link rel="stylesheet" href="../Assets/Style/projects/online-shooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="bar flex-vertical relative center-height" id="project-header">
+    <div class="relative">
+        <div class="bg blur2 pilar img-poly-light"></div>
+    </div>
+    <h1 class="absolute"><b class="cutout">ONLINE SHOOTER</b></h1>
+</section>
+
+<nav class="sticky top bar" >
+    <div class="nav" id="topnav">
+        <a href="/Portfolio/index.html">Home</a>
+        <a href="/Portfolio/aboutme.html">About Me</a>
+        <a href="/Portfolio/projects.html">Projects</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Online Shooter
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#context">Context</a>
+                <a href="#team">Team</a>
+                <a href="#description">Description</a>
+                <a href="#contribution">Contribution</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon " onclick="ToggleResponsive()">
+            <i class="fa fa-bars" id="topnav-toggle-icon"></i>
+        </a>
+    </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+</nav>
+
+<section class="main">
+
+    <section id="context" class="flex-horizontal">
+        <div id="context-content" class="flex-vertical">
+            <h2>Context</h2>
+            <p>
+                This online shooter project was due for a university course on multiplayer and online programming after
+                we had learned and experimented with data replication, time sync and local session hosting. The goal of
+                the project was to create a basic shooter game including online Steam session, lobby timers, selectable
+                skins and server rewinds as its main features.
+                <br>
+                Each team was composed of 2 students and had 2 weeks to make the game.
+            </p>
+        </div>
+        <!--<div id="context-media">
+            <div class="ratio16-9">
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/TdAIsdx_SPk?si=lYmuevhydPb75znp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>-->
+
+    </section>
+
+    <section id="team" class="flex-vertical">
+        <h2> The Team : </h2>
+        <div id="team-content" class="align-center center-width">
+            <div class="row grid-cards">
+                <div class="column show grid-cards">
+                    <div class="content">
+                        <img src="../Assets/Images/profiles/profile-default.png" alt="Profile Picture" style="width:100%">
+                        <h4>Kevin Lapointe</h4>
+                        <p>Programmer</p>
+                    </div>
+                </div>
+                <div class="column show grid-cards">
+                    <div class="content">
+                        <img src="../Assets/Images/profiles/profile-cgirodengo.png" alt="Profile Picture" style="width:100%">
+                        <h4>Camille Girodengo</h4>
+                        <p>Programmer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="description" class="flex-vertical" style="gap: 2px">
+        <div class="flex-horizontal reverse" style="gap: 20px">
+            <div class="flex-vertical" style="height: auto; justify-content: space-evenly;">
+                <h2>Description</h2>
+                <p>
+                    This third-person shooter is a multiplayer game in which 2 to 4 mercenaries players fight each other in
+                    a military base. The game works with local and Steam online sessions.
+                    <br>
+                    Once a player joins a session, they are placed in one of the 2 possible teams which will define their
+                    spawn point and appear in a lobby where they can select a skin and wait for the lobby to be full. In case
+                    the lobby still hasn’t reached the necessary player number to start, the host can launch the timer themselves
+                    to start the game.
+                </p>
+            </div>
+            <div id="description-media" class="slideshow-container">
+                <!-- Slideshow container -->
+                <div class="slideshow" id="desc-slideshow">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="slides fade">
+                        <img src="../Assets/Images/online-shooter/lobby-map.png">
+                    </div>
+
+                    <div class="slides fade">
+                        <img src="../Assets/Images/online-shooter/game-map.png">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1, 'desc-slideshow')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'desc-slideshow')">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        <div class="column100">
+            <p>
+                Within the game, each player needs to have a weapon equipped to be able to attack. Those pick-up-able weapons
+                are placed near every spawn point. The game also includes visible kill counters for each player as well
+                as a global kill history where everyone can see the latest kills.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="contribution" class="flex-vertical">
+        <h2>Contribution</h2>
+        <div id="contribution-content" class="center-width">
+            <div class="flex-horizontal" style="justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap">
+                <div class="">
+                    <p>
+                        In this project, I did most features related to shooting minus the equipping of a weapon.
+                        Those were: shooting a player with the related server rewind for validation, a health and death
+                        system, the kill counts and the kill history. I also made the skin system, the implementation of
+                        the Online Subsystem for hosting and joining Steam sessions and was the main game debugger and bug
+                        fixer when the game wouldn't work.
+                        <br>
+                        Among those features that I developed, the most difficult or interesting for me were the server
+                        rewind, the kill history and testing the online system with Steam.
+                    </p>
+                </div>
+                <div class="flex-horizontal" style="gap: 20px">
+                    <div>
+                        <img src="../Assets/Images/online-shooter/lobby-skins.png" style="width: 100%">
+                    </div>
+                    <div>
+                        <img src="../Assets/Images/online-shooter/game-weapon.png" style="width: 100%">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="">
+                <p>
+                    The server rewind was not a very hard feature to implement, my professor having explained how to
+                    code it in class. Actually, most of the difficulties lay in using this feature for shooting:
+                    when to use it and on whom ? Indeed, triggering a server rewind when a player shoots in any
+                    direction even when it doesn't hit any player is unoptimized, more so since the server rewind would
+                    need to be done for each existing player since no target would be specified. That’s why I first
+                    had the client execute the action and only when this action resulted in hitting a rewindable
+                    element would the real shoot action be executed on the server after a rewind.
+                </p>
+            </div>
+
+            <div class="flex-horizontal" style="justify-content: center; align-items: center; gap: 20px">
+                <div style="max-width: 60%; height: fit-content; padding-bottom: 20px">
+                    <p>
+                        The most interesting feature I had to develop for this project was the kill history because it
+                        allowed me to practice struct replication and learn dynamic array replication which uses the push
+                        system with the concept of “dirty” variables. The process of both writing the code and actually
+                        understanding what exactly I was doing was an arduous process, but I managed and now can reproduce
+                        this feature without any difficulties.
+                    </p>
+                </div>
+                <div class="media" style="align-self: center">
+                    <div class="slideshow" id="slideshow-2">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="slides fade">
+                            <img src="../Assets/Images/online-shooter/game-aim.png">
+                        </div>
+
+                        <div class="slides fade">
+                            <img src="../Assets/Images/online-shooter/game-crouch.png">
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1, 'slideshow-2')">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 'slideshow-2')">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>
+                    At some point in the programming of this functionality, I wanted to fire a delegate which would
+                    allow me to update each player’s Hud after each new kill. I was a bit unsure how to have the
+                    replicated data be retrieved by the actor (game state in this case) which has the replicated array
+                    since a replicated array item has access to its owning array but said array has no way of sending
+                    this data to its own. To fix that, I added a delegate inside the array struct which is fired by
+                    each added item that has been replicated using the reference to their owning array struct.
+                </p>
+            </div>
+
+            <div class="flex-horizontal reverse" style="justify-content: center; align-items: center; gap: 20px">
+                <div style="height: fit-content;">
+                    <p>
+                        I never had any huge difficulties during this project except for one specific aspect not even
+                        coding related: testing the Steam online subsystem features. The reason is in fact that to test
+                        Steam online sessions, one must not have just two Steam accounts but also 2 separate computers
+                        otherwise the created sessions never appear and can never be joined if two game instances are
+                        used on the same computer. Since I did not possess a second computer, I had to rely on my partner
+                        for session hosting which greatly restricted when to test the feature and what can be tested.
+                    </p>
+                </div>
+                <div  class="media" style="align-self: center; max-width: 250px">
+                    <img src="../Assets/Images/online-shooter/steam-logo.png" style="width: 100%">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</section>
+
+<footer class="nav relative bottom bar">
+    <div class="flex-vertical" id="accounts">
+        <div class="flex-horizontal">
+            <a href="https://github.com/Giro4c">
+                <i class="fa fa-github"></i>
+                Giro4c
+            </a>
+        </div>
+        <div class="flex-horizontal">
+            <a href="https://www.linkedin.com/in/camille-girodengo-19669b264/">
+                <i class="fa fa-linkedin-square"></i>
+                Camille Girodengo
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="../Assets/Scripts/topnav.js"></script>
+<script src="../Assets/Scripts/progressbar.js"></script>
+<script src="../Assets/Scripts/slideshow.js"></script>
+
+</body>
+</html>

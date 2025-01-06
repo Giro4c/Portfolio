@@ -1,0 +1,166 @@
+#project-header {
+    height: 20vh;
+}
+
+#project-header *:not(.cutout) {
+    color: black;
+}
+
+#project-header h1 {
+    font-size: 6vh;
+    height: fit-content;
+    margin: auto 0;
+    padding: 0 4vw;
+    top: 33%;
+}
+
+.main {
+    margin: 15px auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+h2 {
+    /*font-size: 60px;*/
+    font-size: 6.5vh;
+    max-font-size: 65px;
+    margin: 10px 0;
+}
+
+h3 {
+    /*font-size: 60px;*/
+    font-size: 4.8vh;
+    max-font-size: 50px;
+    margin: 10px 0;
+}
+
+.main p, .main ul {
+    margin: 5px 0;
+    font-size: 3.3vh;
+    /*font-size: 18px;*/
+}
+
+/*@media (orientation: landscape) {
+    main p {
+        font-size: 3vh;
+    }
+}*/
+
+@media (orientation: portrait) {
+    .main p, .main ul {
+        font-size: 3.3vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #team .column {
+        flex: 50%;
+    }
+}
+
+/* CONTEXT */
+
+#context {
+    min-height: 35vh;
+    height: auto;
+    gap: 15px;
+    align-items: center;
+    /*justify-content: space-evenly;*/
+    /*width: 90%;*/
+}
+
+#context-content {
+    width: auto;
+    min-width: 40%;
+    max-width: 100%;
+}
+
+#context-media {
+    max-width: 300px;
+    min-width: 30%;
+}
+
+#context-media img {
+    width: 100%;
+}
+
+/* TEAM */
+
+#team {
+    min-height: 35vh;
+    height: auto;
+    align-items: center;
+}
+
+#team-content {
+    width: auto;
+    min-width: 40%;
+    /*max-width: 90%;*/
+    gap: 15px;
+    align-items: center;
+    /*justify-content: space-evenly;*/
+}
+
+#team .column {
+    flex: 25%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 600px) {
+    #team .column {
+        flex: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    #team .column {
+        flex: 100%;
+    }
+}
+
+/* DESCRIPTION */
+
+#description {
+    gap: 15px;
+    align-items: center;
+    min-height: 35vh;
+    height: auto;
+    width: 100%;
+}
+
+#description-content {
+    max-width: 50%;
+}
+
+#description-media {
+    max-width: 50%;
+}
+
+/* CONTRIBUTION */
+
+#contribution {
+    min-height: 35vh;
+    height: auto;
+    align-items: center;
+}
+
+#contribution-content {
+    width: auto;
+    min-width: 40%;
+    /*max-width: 90%;*/
+    gap: 15px;
+    align-items: center;
+    /*justify-content: space-evenly;*/
+}
+
+#contribution .column {
+    flex: 50%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    #contribution .column {
+        flex: 100%;
+    }
+}

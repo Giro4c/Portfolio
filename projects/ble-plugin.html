@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BLE Plugin & Package</title>
+    <link rel="stylesheet" href="../Assets/Style/common.css">
+    <link rel="stylesheet" href="../Assets/Style/topnav.css">
+    <link rel="stylesheet" href="../Assets/Style/progressbar.css">
+    <link rel="stylesheet" href="../Assets/Style/slideshow.css">
+    <link rel="stylesheet" href="../Assets/Style/grid.css">
+    <link rel="stylesheet" href="../Assets/Style/grid-cards.css">
+    <link rel="stylesheet" href="../Assets/Style/grid-gallery.css">
+    <link rel="stylesheet" href="../Assets/Style/project.css">
+    <link rel="stylesheet" href="../Assets/Style/projects/ble-plugin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="bar flex-vertical relative center-height" id="project-header">
+    <div class="relative">
+        <div class="bg blur2 pilar img-poly-light"></div>
+    </div>
+    <h1 class="absolute"><b class="cutout">BLE PLUGIN & PACKAGE</b></h1>
+</section>
+
+<nav class="sticky top bar" >
+    <div class="nav" id="topnav">
+        <a href="/Portfolio/index.html">Home</a>
+        <a href="/Portfolio/aboutme.html">About Me</a>
+        <a href="/Portfolio/projects.html">Projects</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                BLE Plugin & Package
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#context">Context</a>
+                <a href="#description">Description</a>
+                <a href="#contribution">Issues Faced</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon " onclick="ToggleResponsive()">
+            <i class="fa fa-bars" id="topnav-toggle-icon"></i>
+        </a>
+    </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+</nav>
+
+<section class="main">
+
+    <section id="context" class="flex-horizontal">
+        <div id="context-content" class="flex-vertical">
+            <h2>Context</h2>
+            <p>
+                During my internship at the CRVM, I was entrusted the task of making a Bluetooth Low-Energy Java plugin
+                to connect to bluetooth captors and fitness machines whose data could be used to simulate a cycling session
+                for a coming project of the laboratory. I spent around two months working on this plugin and its use in Unity
+                (parsing received binary data into readable and understandable data, sending data to the device, etc…)
+                along with other projects. To help me in this endeavor, my supervisor gave me the code of the old plugin
+                and its implementation in Unity that I would have to replace and upgrade as it no longer worked and was deprecated.
+            </p>
+        </div>
+        <div id="context-media"><img src="../Assets/Images/ble-plugin/bicycle.png"></div>
+
+    </section>
+
+    <section id="description" class="flex-vertical">
+        <h2>Description</h2>
+        <div class="center-width" id="description-content">
+            <div>
+                <p>
+                    This project includes two realisations : a plugin and its implementation in a Unity package. Both are
+                    centered around Bluetooth Low-Energy (BLE).
+                </p>
+            </div>
+            <div class="flex-horizontal reverse" style="justify-content: center; align-items: center; gap: 20px">
+                <div>
+                    <p>
+                        The plugin allows users to search for nearby BLE devices and retrieve their MAC address. They can use
+                        this address to then connect or disconnect from one of those devices. For now, the plugin makes a connection
+                        for one GATT service per device though it supports multiple characteristics which can be read, written or
+                        subscribed to automatically depending on their properties (read, write, notify). The plugin supports
+                        Android API 32 and 33+.
+                    </p>
+                </div>
+                <div class="media icon">
+                    <img src="../Assets/Images/ble-plugin/bluetooth-logo.png" style="width: 100%">
+                </div>
+            </div>
+
+            <div class="flex-horizontal" style="justify-content: center; align-items: center; gap: 20px">
+                <div>
+                    <p>
+                        The Unity package serves to communicate with BLE devices using its dedicated plugin. All GATT characteristics
+                        properties and operations are supported, those being read, write and notify (subscription). This package
+                        includes readable data structures, parsers and procedure managers for each supported characteristic.
+                    </p>
+                </div>
+                <div class="media icon">
+                    <img src="../Assets/Images/ble-plugin/unity-logo.png" style="width: 100%">
+                </div>
+            </div>
+
+            <div>
+                <p>
+                    So far, the supported characteristics are the following:
+                </p>
+                <ul>
+                    <li>CSC Measurement</li>
+                    <li>SC Control Point</li>
+                    <li>WitMotion IMU Sensor</li>
+                    <li>WitMotion IMU Control Point</li>
+                    <li>Supported Heart Rate Range</li>
+                    <li>Supported Inclination Range</li>
+                    <li>Supported Power Range</li>
+                    <li>Supported Resistance Level Range</li>
+                    <li>Supported Speed Range</li>
+                    <li>Fitness Machine Status</li>
+                    <li>Fitness Machine Feature</li>
+                    <li>Fitness Machine Control Point</li>
+                    <li>Indoor Bike Data</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contribution" class="flex-vertical center-width" style="gap: 5px">
+        <h2>Issues Faced</h2>
+
+        <div class="flex-vertical center-width" style="gap: 5px">
+            <h3>Plugin</h3>
+
+            <div>
+                <p>
+                    As the main needs for this project evolved, the plugin and package went through more than one version.
+                    <br>
+                    At first, the plugin only supported operations on only one characteristic per device then as I
+                    started to read, write or subscribe to more data I had to refactor my code to support multiple
+                    characteristics within the same GATT service. Later on, I discovered two important bugs that I had to fix.
+                </p>
+            </div>
+
+            <div class="flex-horizontal reverse" style="justify-content: center; align-items: center; gap: 20px">
+                <div>
+                    <p>
+                        The first was a compatibility problem between Android 32 and 33 where the latter replaced some
+                        callbacks, including for characteristics red and notify, deprecating those from the former which
+                        would never be called. It took me quite a while to actually find the cause of this issue, since I
+                        couldn't find anything on forums, until I stumbled on a little deprecated mention in the official
+                        documentation for Android API 33. In the end, I managed to fix this by adding duplicates of my
+                        Android 33 compliant callbacks but with the signature from version 32.
+                    </p>
+                </div>
+                <div id="android-icon">
+                    <img src="../Assets/Images/ble-plugin/android-logo.png" style="width: 100%">
+                </div>
+            </div>
+
+            <div>
+                <p>
+                    The second bug I had to fix was related to GATT operations on BLE devices with a singular connection.
+                    Indeed, a GATT client can only have one ongoing async operation at once which means that calling
+                    for a read or write for example while there is still an operation in progress will lead to an automatic
+                    drop of those requests since by default GATT doesn't have a request queue.
+                    <br>
+                    So I made my own using the observer design pattern and “notifications” fired after any supported GATT ends (its callback
+                    has been called). However, I also had to implement the observer pattern with interfaces since the
+                    default implementation in Java uses classes which restrict inheritance where I wanted to keep the
+                    freedom of class parentage for code reusability purposes.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h3>Package</h3>
+            <div class="row grid-gallery">
+                <div class="column100 grid-gallery">
+                    <p>
+                        When I first made the implementation package which would subscribe to the Cycling Speed and Cadence
+                        (CSC) Measurement characteristic and translate the collected data from a bit array to a data structure
+                        with understandable values and attributes such as speed and cadence for example. I did not however
+                        concern myself with code optimization to add new features (characteristics and services in this
+                        case) more easily for the first version as the main focus was to test the plugin and find how to
+                        do the parsing.
+                    </p>
+                </div>
+                <div class="column grid-gallery" style="height: auto; margin: auto 0">
+                    <p>
+                        The first issue I was faced with was handling bluetooth permissions to be able to connect to BLE
+                        devices so that the app would try to search or connect to devices only after the user gives the
+                        necessary permissions and not before otherwise connections would never succeed at launch and there
+                        would be no way no know accurately when to try again without using timers which would be inefficient anyway.
+                        <br>
+                        After looking into the official documentation regarding permission handling I found that I could
+                        use callbacks I would link to the handler so that I can know when the user grants all permissions.
+                        However, since the permission handler calls those callbacks for each granted or refused permission,
+                        I also added a counter to ensure that the event announcing that the plugin is ready to be used would
+                        be fired after all permissions were given and not after the first one granted.
+                    </p>
+                </div>
+                <div id="popup-location" class="column grid-gallery" style="height: auto; margin: auto 0">
+                    <img src="../Assets/Images/ble-plugin/permission-location-light.jpg" style="width: 100%">
+                </div>
+                <div id="popup-connect" class="column grid-gallery" style="height: auto; margin: auto 0">
+                    <img src="../Assets/Images/ble-plugin/permission-connect-light.png" style="width: 100%">
+                </div>
+                <div class="column grid-gallery" style="height: auto; margin: auto 0">
+                    <p>
+                        Another issue I had to deal with was a global one where documentation concerning the GATT characteristics
+                        was severely lacking in explanation of the data (especially the CSC Measurement one).
+                        <br>
+                        Indeed, in some cases, the documentation describes what is contained in the data package but never
+                        where those attributes (which bits, length, unit, etc…) are in said package which is very frustrating
+                        at times. Thankfully, with some research I found some posts on forums with the information I was looking for.
+                        <br>
+                        I also went through the same problem with sending data packages for characteristic writing although
+                        the process was easier since I had time to get used to the vague explanations and bits conversion
+                        by the time I started the support of writable characteristics.
+                    </p>
+                </div>
+                <div class="column100 grid-gallery">
+                    <p>
+                        Last obstacle I confronted was making my package accessible for adding new supported characteristics
+                        and services. It took me some refactoring before I was satisfied with the final architecture.
+                        <br>
+                        For this last version, I isolated characteristics and their behaviors from their associated service
+                        to turn them into independent objects. I could therefore give them common behavior without having
+                        to copy-paste the same lines with minor changes by implementing interfaces which provided implementation
+                        for each characteristic property and its related operations : Read, Write, and Notify. That way,
+                        the only characteristics I had to give special behavior implementation were the writable ones.
+                        <br>
+                        Each characteristic has a parser and a data structure with the same common prefix for easy
+                        understanding and debugging. Same goes for services which have sessions used to store data from
+                        included characteristics and make calculations like the current speed based on the acceleration, etc…
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</section>
+
+<footer class="nav relative bottom bar">
+    <div class="flex-vertical" id="accounts">
+        <div class="flex-horizontal">
+            <a href="https://github.com/Giro4c">
+                <i class="fa fa-github"></i>
+                Giro4c
+            </a>
+        </div>
+        <div class="flex-horizontal">
+            <a href="https://www.linkedin.com/in/camille-girodengo-19669b264/">
+                <i class="fa fa-linkedin-square"></i>
+                Camille Girodengo
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="../Assets/Scripts/topnav.js"></script>
+<script src="../Assets/Scripts/progressbar.js"></script>
+<script src="../Assets/Scripts/slideshow.js"></script>
+
+</body>
+</html>

@@ -42,7 +42,6 @@ p {
 #profile-pic {
     max-width: 50%;
     min-width: 35%;
-
 }
 
 #profile-pic img {
@@ -66,7 +65,7 @@ p {
     max-width: 75%;
 }
 
-.slideshow-container {
+.slideshow {
     max-width: 50%;
     max-height: 90vh;
     min-height: 50vh;

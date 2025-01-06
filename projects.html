@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Home</title>
+    <title>Projects</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" href="Assets/Style/common.css">
     <link rel="stylesheet" href="Assets/Style/topnav.css">
     <link rel="stylesheet" href="Assets/Style/grid.css">
+    <link rel="stylesheet" href="Assets/Style/grid-cards.css">
     <link rel="stylesheet" href="Assets/Style/progressbar.css">
     <link rel="stylesheet" href="Assets/Style/projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,126 +44,71 @@
             <button class="btn-filter" onclick="filterSelection('unity')"> Unity</button>
             <button class="btn-filter" onclick="filterSelection('unreal')"> Unreal</button>
             <button class="btn-filter" onclick="filterSelection('java')"> Java</button>
-            <button class="btn-filter" onclick="filterSelection('php')"> Php</button>
-            <button class="btn-filter" onclick="filterSelection('javascript')"> JavaScript</button>
+<!--            <button class="btn-filter" onclick="filterSelection('php')"> Php</button>-->
+<!--            <button class="btn-filter" onclick="filterSelection('javascript')"> JavaScript</button>-->
         </div>
 
         <!-- Projects Gallery Grid -->
-        <div class="row">
-        <!-- UNITY ++++++++++++++++++++++++ -->
-            <div class="column unity">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="Mountains" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Unity !!!</p>
-                </div>
-            </div>
-            <div class="column unity">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="Lights" style="width:100%">
-                    <h4>Project 2</h4>
-                    <p>Unity !!!</p>
-                </div>
-            </div>
-            <div class="column unity">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="Nature" style="width:100%">
-                    <h4>Project 3</h4>
-                    <p>Unity !!!</p>
-                </div>
+        <div class="row grid-cards">
+
+            <div class="column unity grid-cards">
+                <a href="projects/shifting-beat.html">
+                    <div class="content">
+                        <img src="./Assets/Icons/icon-wonderjam-a24.jpg" alt="Shifting Beat preview" style="width:100%">
+                        <h4>Shifting Beat</h4>
+                        <p>A rogue-lite game with music components made during the WonderJam A24.</p>
+                    </div>
+                </a>
             </div>
 
-            <!-- UNREAL ++++++++++++++++++++++++ -->
-            <div class="column unreal">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="Car" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Unreal !!!</p>
-                </div>
-            </div>
-            <div class="column unreal">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="Car" style="width:100%">
-                    <h4>Project 2</h4>
-                    <p>Unreal !!!</p>
-                </div>
-            </div>
-            <div class="column unreal">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="Car" style="width:100%">
-                    <h4>Project 3</h4>
-                    <p>Unreal !!!</p>
-                </div>
+            <div class="column unreal grid-cards">
+                <a href="projects/online-shooter.html">
+                    <div class="content">
+                        <img src="./Assets/Icons/icon-online-shooter.png" alt="Car" style="width:100%">
+                        <h4>Online Shooter</h4>
+                        <p>An online third-person shooter using Steam Online Services.</p>
+                    </div>
+                </a>
             </div>
 
-            <!-- JAVA ++++++++++++++++++++++++ -->
-            <div class="column java">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Java !!!</p>
-                </div>
+            <div class="column unity java grid-cards">
+                <a href="projects/ble-plugin.html">
+                    <div class="content">
+                        <img src="./Assets/Images/ble-plugin/bluetooth-logo.png" alt="BLE Plugin preview" style="width:100%">
+                        <h4>BLE Plugin & Package</h4>
+                        <p>A Bluetooth Low-Energy plugin in Java and its Unity support package with devices such as cycling speed sensors</p>
+                    </div>
+                </a>
             </div>
-            <div class="column java">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 2</h4>
-                    <p>Java !!!</p>
-                </div>
-            </div>
-            <div class="column java">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 3</h4>
-                    <p>Java !!!</p>
-                </div>
+
+            <div class="column unity grid-cards">
+                <a href="projects/labscape.html">
+                    <div class="content">
+                        <img src="./Assets/Images/labscape/icon3.png" alt="Labscape preview" style="width:100%">
+                        <h4>Labscape</h4>
+                        <p>A VR Escape game using Hand Tracking and Unity Engine.</p>
+                    </div>
+                </a>
             </div>
 
             <!-- PHP ++++++++++++++++++++++++ -->
-            <div class="column php">
+            <!--<div class="column php grid-cards">
                 <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
                     <h4>Project 1</h4>
                     <p>Php !!!</p>
                 </div>
-            </div>
-            <div class="column php">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 2</h4>
-                    <p>Php !!!</p>
-                </div>
-            </div>
-            <div class="column php">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 3</h4>
-                    <p>Php !!!</p>
-                </div>
-            </div>
+            </div>-->
 
             <!-- JAVASCRIPT ++++++++++++++++++++++++ -->
-            <div class="column javascript">
+            <!--<div class="column javascript grid-cards">
                 <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
                     <h4>Project 1</h4>
                     <p>JavaScript !!!</p>
                 </div>
-            </div>
-            <div class="column javascript">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 2</h4>
-                    <p>JavaScript !!!</p>
-                </div>
-            </div>
-            <div class="column javascript">
-                <div class="content">
-                    <img src="../Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 3</h4>
-                    <p>JavaScript !!!</p>
-                </div>
-            </div>
+            </div>-->
+
         </div> <!-- End Project Grid -->
     </section>
 
@@ -192,8 +138,9 @@
     </div>
 </footer>
 
+<script src="Assets/Scripts/travel.js"></script>
 <script src="Assets/Scripts/topnav.js"></script>
-<script src="Assets/Scripts/grid.js"></script>
+<script src="Assets/Scripts/filtered-grid.js"></script>
 <script src="Assets/Scripts/progressbar.js"></script>
 
 

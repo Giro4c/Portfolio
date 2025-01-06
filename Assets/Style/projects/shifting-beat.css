@@ -1,0 +1,31 @@
+.column.grid-gallery > * {
+    align-self: center;
+}
+
+.column.grid-gallery {
+    padding: 10px;
+}
+
+#context {
+    align-items: flex-start;
+}
+
+#context-media {
+    min-width: 24%;
+    align-content: center;
+}
+
+#description-media {
+    min-width: 150px;
+    width: 50vw;
+    max-width: 400px;
+    align-self: center;
+}
+
+#contribution .media {
+    max-width: 70%
+}
+
+#contribution .media img {
+    width: 100%;
+}

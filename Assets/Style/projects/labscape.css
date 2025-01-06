@@ -1,0 +1,31 @@
+.column.grid-gallery > * {
+    align-self: center;
+}
+
+.column.grid-gallery {
+    padding: 10px;
+}
+
+/*#context-media {*/
+/*    max-width: 300px;*/
+/*}*/
+
+#context {
+    align-items: flex-start;
+}
+
+#labscape-demo {
+    min-width: 150px;
+    width: 50vw;
+    max-width: 320px
+}
+
+#slideshow-container-4 {
+    min-width: 150px;
+    width: 50vw;
+    max-width: 320px
+}
+
+#slideshow-container-3, #slideshow-container-1 {
+    max-width: 70%
+}

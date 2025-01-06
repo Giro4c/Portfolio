@@ -1,0 +1,33 @@
+.column.grid-gallery > * {
+    align-self: center;
+}
+
+.column.grid-gallery {
+    padding: 10px;
+}
+
+/*
+#context-media {
+    max-width: 300px;
+}
+*/
+
+#description-media {
+    min-width: 150px;
+    width: 60vw;
+    max-width: 600px;
+    align-self: center;
+    padding-top: 30px;
+}
+
+#contribution .media {
+    max-width: 70%
+}
+
+#contribution .media img {
+    width: 100%;
+}
+
+#steam-icon {
+    max-width: 150px;
+}

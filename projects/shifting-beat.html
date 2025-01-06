@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shifting Beat</title>
+    <link rel="stylesheet" href="../Assets/Style/common.css">
+    <link rel="stylesheet" href="../Assets/Style/topnav.css">
+    <link rel="stylesheet" href="../Assets/Style/progressbar.css">
+    <link rel="stylesheet" href="../Assets/Style/slideshow.css">
+    <link rel="stylesheet" href="../Assets/Style/grid.css">
+    <link rel="stylesheet" href="../Assets/Style/grid-cards.css">
+    <link rel="stylesheet" href="../Assets/Style/grid-gallery.css">
+    <link rel="stylesheet" href="../Assets/Style/project.css">
+    <link rel="stylesheet" href="../Assets/Style/projects/shifting-beat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="bar flex-vertical relative center-height" id="project-header">
+    <div class="relative">
+        <div class="bg blur2 pilar img-poly-light"></div>
+    </div>
+    <h1 class="absolute"><b class="cutout">SHIFTING BEAT</b></h1>
+</section>
+
+<nav class="sticky top bar" >
+    <div class="nav" id="topnav">
+        <a href="/Portfolio/index.html">Home</a>
+        <a href="/Portfolio/aboutme.html">About Me</a>
+        <a href="/Portfolio/projects.html">Projects</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Shifting Beat
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#context">Context</a>
+                <a href="#team">Team</a>
+                <a href="#description">Description</a>
+                <a href="#contribution">Contribution</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon " onclick="ToggleResponsive()">
+            <i class="fa fa-bars" id="topnav-toggle-icon"></i>
+        </a>
+    </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+</nav>
+
+<section class="main">
+
+    <section id="context" class="flex-horizontal">
+        <div id="context-content" class="flex-vertical">
+            <h2>Context</h2>
+            <p>
+                Shifting Beat is a Unity project made during the WonderJam A24, a game jam organized by the student association
+                of UQAC that lasts 48 hours. The main theme for this edition was “Dimension” with 3 sub-themes for each team.
+                Mine, composed of only three programmers with no artists, had: “A point for me” (Arcane), “Restart, Again”
+                (Rogue-lite), and “Up the volume” (Music, Rhythm).
+                <br>
+                This project was a real challenge for me as my first game jam participation and my shortest project (2 days).
+            </p>
+        </div>
+        <div id="context-media"><img src="../Assets/Icons/icon-wonderjam.PNG" style="align-self: center"></div>
+
+    </section>
+
+    <section id="team" class="flex-vertical">
+        <h2> The Team : </h2>
+        <div id="team-content" class="align-center center-width">
+            <div class="row grid-cards">
+                <div class="column show grid-cards">
+                    <div class="content">
+                        <img src="../Assets/Images/profiles/profile-default.png" alt="Profile Picture" style="width:100%">
+                        <h4>Mathieu Sparfel-Monnot</h4>
+                        <p>Enemies Programmer</p>
+                    </div>
+                </div>
+                <div class="column show grid-cards">
+                    <div class="content">
+                        <img src="../Assets/Images/profiles/profile-default.png" alt="Profile Picture" style="width:100%">
+                        <h4>Thomas Marquis</h4>
+                        <p>Character Programmer</p>
+                    </div>
+                </div>
+                <div class="column show grid-cards">
+                    <div class="content">
+                        <img src="../Assets/Images/profiles/profile-cgirodengo.png" alt="Profile Picture" style="width:100%">
+                        <h4>Camille Girodengo</h4>
+                        <p>Subsystems Programmer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="description" class="flex-vertical" style="gap: 2px">
+        <div class="flex-horizontal reverse" style="gap: 20px">
+            <div class="flex-vertical" style="height: auto; justify-content: space-evenly;">
+                <h2>Description</h2>
+                <p>
+                    Shifting Beat is a 3D beat ‘em up game with a third person isometric view in which the player must face
+                    waves of enemies originating from multiple dimensions. Their objective is to survive and defeat as many
+                    opponents as they can. The player can also travel between three dimensions (Dungeon, Toon Land, Cyberspace)
+                    which each follow a specific theme with its own enemies, background music and layout.
+                </p>
+            </div>
+            <div id="description-media" class="slideshow-container">
+                <!-- Slideshow container -->
+                <div class="slideshow" id="desc-slideshow">
+
+                    <!-- Full-width images -->
+                    <div class="slides fade">
+                        <img src="../Assets/Images/shifting-beat/dungeon.png">
+                        <!--                    <div class="text">Dungeon</div>-->
+                    </div>
+
+                    <div class="slides fade">
+                        <img src="../Assets/Images/shifting-beat/toonland.png">
+                        <!--                    <div class="text">Toon Land</div>-->
+                    </div>
+
+                    <div class="slides fade">
+                        <img src="../Assets/Images/shifting-beat/cyberspace.png">
+                        <!--                    <div class="text">Cyberspace</div>-->
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1, 'desc-slideshow')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'desc-slideshow')">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        <div class="column100">
+            <p>
+                Attacking an entity gives points but the increment is higher if the action is done in rhythm with the
+                background music’s beat. Doing so affects a combo which also affects the score increase.
+                <br>
+                Since the game includes a shop where players can buy upgrades to increase their stats, score or money
+                earned, a monetary system is included with defeating enemies as the way to gain currency.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="contribution" class="flex-vertical">
+        <h2>Contribution</h2>
+        <div id="contribution-content" class="center-width">
+            <div class="flex-horizontal" style="justify-content: center; align-items: center; gap: 20px">
+                <div id="contribution-intro" style="max-width: 60%; height: fit-content; padding-bottom: 20px">
+                    <p>
+                        In this project, I was in charge of coding all subsystems related to the jam’s sub-themes my team
+                        was given while my teammates did the character, the enemies (AI), the fighting system, dimension
+                        environments, etc… I therefore had to do the Score, Shop & Upgrades, Save, and Rhythm subsystems.
+                        <br>
+                        The score subsystem as well as the shop and upgrades were quickly done and tested along with the
+                        saving of the player’s high score and current money. Once those were done I created a main menu
+                        which contained the shop and showed whether the player already has an upgrade or not.
+                    </p>
+                </div>
+                <div class="media" style="align-self: center;">
+                    <img src="../Assets/Images/shifting-beat/shop1.png">
+                </div>
+            </div>
+
+            <div class="flex-horizontal reverse" style="justify-content: center; align-items: center; gap: 20px">
+                <div style="max-width: 60%; height: fit-content; padding-bottom: 20px">
+                    <p>
+                        The real difficulty in this project was the rhythm system for I had to find a way to synchronize
+                        the environment with the audios as they are played asynchronously and can cause delayed feedback
+                        or cause a beat skip because of the possible tick time difference. The other issue was to link
+                        an action to the music’s beat and defining a trigger margin so that players don’t have to perform
+                        an attack with a frame perfect timing which would be basically unplayable.
+                    </p>
+                </div>
+                <div class="media" style="align-self: center;">
+                    <img src="../Assets/Images/shifting-beat/rhythm-pulse.gif">
+                </div>
+            </div>
+            <div class="">
+                <p>
+                    To solve the first problem, I used an online video tutorial on how to sync an element from the
+                    decor with an audio thanks to its BPM and its current time.
+                    <br>
+                    For the second, I made an In Rhythm Manager reliant on beat events “catching”, those events being
+                    fired by the associated Beat Manager of each music audio source, and timers. This rhythm manager
+                    treats all action triggered cases: after or before the current beat (within the error margin),
+                    after an “unlinked” action still waiting for an associated beat. With this system, I was able to
+                    easily control and adjust the timing difficulty, manage a streak combo all the while effectively
+                    linking triggered actions to beats.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+</section>
+
+<footer class="nav relative bottom bar">
+    <div class="flex-vertical" id="accounts">
+        <div class="flex-horizontal">
+            <a href="https://github.com/Giro4c">
+                <i class="fa fa-github"></i>
+                Giro4c
+            </a>
+        </div>
+        <div class="flex-horizontal">
+            <a href="https://www.linkedin.com/in/camille-girodengo-19669b264/">
+                <i class="fa fa-linkedin-square"></i>
+                Camille Girodengo
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="../Assets/Scripts/topnav.js"></script>
+<script src="../Assets/Scripts/progressbar.js"></script>
+<script src="../Assets/Scripts/slideshow.js"></script>
+
+</body>
+</html>

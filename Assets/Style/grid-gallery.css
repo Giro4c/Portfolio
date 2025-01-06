@@ -1,0 +1,13 @@
+/* Add padding BETWEEN each column (if you want) */
+.row.grid-gallery {
+    padding: 0 4px;
+}
+
+.column.grid-gallery {
+    display: block; /* Show columns by default */
+    padding: 0 4px;
+}
+
+.column.grid-gallery img {
+    margin-top: 8px;
+}
