@@ -14,7 +14,8 @@ body {
 
 .main {
     max-width: 1200px;
-    margin: 8px auto;
+    margin: 15px auto;
+    padding: 0 15px;
 }
 
 .hidden {
