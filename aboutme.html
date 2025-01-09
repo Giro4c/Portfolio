@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" href="Assets/Style/common.css">
     <link rel="stylesheet" href="Assets/Style/aboutme.css">
+    <link rel="stylesheet" href="Assets/Style/contact.css">
     <link rel="stylesheet" href="Assets/Style/topnav.css">
     <link rel="stylesheet" href="Assets/Style/progressbar.css">
     <link rel="stylesheet" href="Assets/Style/slideshow.css">
@@ -216,7 +217,7 @@
 </section>
 
 <footer class="nav relative bottom bar">
-    <div class="flex-vertical" id="accounts">
+    <div class="flex-vertical">
         <div class="flex-horizontal">
             <a href="https://github.com/Giro4c">
                 <i class="fa fa-github"></i>
@@ -228,6 +229,21 @@
                 <i class="fa fa-linkedin-square"></i>
                  Camille Girodengo
             </a>
+        </div>
+        <div class="contact-form">
+            <h5 style="width: fit-content; margin: 0 auto;">Contact Me</h5>
+            <form action="index.html">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="Your full name..">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email address..">
+
+                <label for="msg">Subject</label>
+                <textarea id="msg" name="msg" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Send">
+            </form>
         </div>
     </div>
 </footer>
