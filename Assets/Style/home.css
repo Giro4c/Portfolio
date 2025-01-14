@@ -92,7 +92,8 @@
 }
 
 #intro-title {
-    height: 35vh;
+    min-height: 35vh;
+    height: fit-content;
     width: 50%;
     padding: 10px 10px;
     border: rgb(65, 156, 180) 10px dashed;
@@ -117,7 +118,8 @@
 
 #intro-content {
     text-align: center;
-    max-width: 140%;
+    max-width: 85%;
+    font-size: 3vw;
 }
 
 #about {
@@ -182,7 +184,33 @@
 
 @media (pointer:none), (pointer:coarse) {
 
-    
+    /* INTRO */
+
+    #intro-container {
+        padding-top: 15vh;
+    }
+
+    #intro {
+
+    }
+
+    #intro-title {
+        width: 75%;
+    }
+
+    #intro-title h1 {
+        font-size: 20vw;
+    }
+
+    #intro-title h2 {
+        font-size: 11vw;
+    }
+
+    #intro-content {
+        font-size: 4vw;
+    }
+
+    /* PAGE LINKS */
 
     .nav-btn span:before, .nav-btn span:after {
         display: none;
