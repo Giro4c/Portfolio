@@ -23,7 +23,8 @@
 
 .nav-btn span.after:after {
     content: '\00bb';
-    position: absolute;
+    /*position: absolute;*/
+    position: relative;
     opacity: 0;
     top: 0;
     right: -20px;
@@ -32,7 +33,8 @@
 
 .nav-btn span.before:before {
     content: '\00ab';
-    position: absolute;
+    /*position: absolute;*/
+    position: relative;
     opacity: 0;
     top: 0;
     left: -20px;
@@ -90,7 +92,8 @@
 }
 
 #intro-title {
-    height: 35vh;
+    min-height: 35vh;
+    height: fit-content;
     width: 50%;
     padding: 10px 10px;
     border: rgb(65, 156, 180) 10px dashed;
@@ -115,7 +118,8 @@
 
 #intro-content {
     text-align: center;
-    max-width: 140%;
+    max-width: 85%;
+    font-size: 3vw;
 }
 
 #about {
@@ -127,20 +131,135 @@
 }
 
 #contacts {
-    position: fixed;
+    position: absolute;
+    top: 50%;
     bottom: 10%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
 
     width: 15%;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #contacts > * {
     /*font-size: 25px;*/
     /*font-size: 50px;*/
     font-size: 5vw;
+}
+
+#home-sidenav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#page-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sidenav {
+    position: relative;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.sidenav a {
+    font-size: 3.5vw;
+}
+
+/* ************************************************************ */
+/* MOBILE VERSION ********************************************* */
+/* ************************************************************ */
+
+@media (pointer:none), (pointer:coarse) {
+
+    /* INTRO */
+
+    #intro-container {
+        padding-top: 15vh;
+    }
+
+    #intro {
+
+    }
+
+    #intro-title {
+        width: 75%;
+    }
+
+    #intro-title h1 {
+        font-size: 20vw;
+    }
+
+    #intro-title h2 {
+        font-size: 11vw;
+    }
+
+    #intro-content {
+        font-size: 4vw;
+    }
+
+    /* PAGE LINKS */
+
+    #home-sidenav {
+        height: 35vh;
+    }
+
+    .nav-btn span:before, .nav-btn span:after {
+        display: none;
+    }
+
+    #page-links {
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+
+    .sidenav {
+        position: relative;
+        border-radius: 5px 5px 5px 5px; /* Rounded corners on the top left and bottom left side */
+        width: 55%;
+    }
+
+    .sidenav.left a, .sidenav.right a {
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .sidenav a {
+        font-size: 3.5vh;
+    }
+
+    /* CONTACTS */
+
+    #contacts {
+        /* Reset prev position */
+        position: relative;
+        top: initial;
+        bottom: initial;
+        left: initial;
+        transform: initial;
+
+        /* New layout */
+        width: 50%;
+        margin: 0 auto; /* Centered Row */
+    }
+
+    #contacts > * {
+        font-size: 5vh;
+    }
+
 }

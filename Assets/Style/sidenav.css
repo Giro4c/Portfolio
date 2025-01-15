@@ -37,7 +37,7 @@
 }
 
 .sidenav.right a {
-    right: -70%; /* Position outside of the screen */
+    right: -68%; /* Position outside of the screen */
     border-radius: 5px 0 0 5px; /* Rounded corners on the top left and bottom left side */
     text-align: left;
 
@@ -46,7 +46,7 @@
 }
 
 .sidenav.left a {
-    left: -70%; /* Position outside of the screen */
+    left: -72%; /* Position outside of the screen */
     border-radius: 0 5px 5px 0; /* Rounded corners on the top left and bottom left side */
     text-align: right;
 
@@ -64,4 +64,14 @@
 
 .sidenav.left a:hover {
     left: -5px;
+}
+
+/* ************************************************************ */
+/* MOBILE VERSION ********************************************* */
+/* ************************************************************ */
+
+@media (pointer:none), (pointer:coarse) {
+
+
+
 }
