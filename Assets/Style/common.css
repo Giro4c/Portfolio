@@ -203,6 +203,8 @@ body {
 
 @media (pointer:none), (pointer:coarse) {
 
-
+    footer {
+        position: absolute;
+    }
 
 }
