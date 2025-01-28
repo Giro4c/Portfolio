@@ -27,6 +27,11 @@ header > * {
     padding: 50px 0;
 }
 
+#FilterBtnContainer {
+    justify-content: center;
+    align-content: center;
+}
+
 /* ************************************************************ */
 /* MOBILE VERSION ********************************************* */
 /* ************************************************************ */
@@ -37,5 +42,24 @@ header > * {
         text-align: center;
         font-size: 4vw;
     }
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .btn-filter {
+        font-size: 4vw;
+    }
+
+    #FilterBtnContainer {
+        gap: 20px;
+    }
+
+    .row.grid-cards,
+    .row.grid-cards > .column.grid-cards {
+        padding: 16px;
+    }
+
 
 }
