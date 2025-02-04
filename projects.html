@@ -13,199 +13,202 @@
 </head>
 <body>
 
-<header>
+<div id="root">
+    <header>
 
-    <h1>My Projects</h1>
+        <h1>My Projects</h1>
 
-</header>
+    </header>
 
-<nav class="sticky top bar" >
-    <div class="nav" id="topnav">
-        <a href="/Portfolio/index.html">Home</a>
-        <a href="/Portfolio/aboutme.html">About Me</a>
-        <a href="/Portfolio/projects.html" class="active">Projects</a>
+    <nav class="sticky top bar" >
+        <div class="nav" id="topnav">
+            <a href="/Portfolio/index.html">Home</a>
+            <a href="/Portfolio/aboutme.html">About Me</a>
+            <a href="/Portfolio/projects.html" class="active">Projects</a>
 
-        <a href="javascript:void(0);" class="icon " onclick="ToggleResponsive()">
-            <i class="fa fa-bars" id="topnav-toggle-icon"></i>
-        </a>
-    </div>
-    <div class="progress-container">
-        <div class="progress-bar" id="progress-bar"></div>
-    </div>
-</nav>
-
-
-<section class="main">
-
-    <section class="align-center center-width" id="projects">
-
-        <div id="FilterBtnContainer" class="flex-horizontal">
-            <button class="btn-filter active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn-filter" onclick="filterSelection('unity')"> Unity</button>
-            <button class="btn-filter" onclick="filterSelection('unreal')"> Unreal</button>
-            <button class="btn-filter" onclick="filterSelection('java')"> Java</button>
-<!--            <button class="btn-filter" onclick="filterSelection('php')"> Php</button>-->
-<!--            <button class="btn-filter" onclick="filterSelection('javascript')"> JavaScript</button>-->
+            <a href="javascript:void(0);" class="icon " onclick="ToggleResponsive()">
+                <i class="fa fa-bars" id="topnav-toggle-icon"></i>
+            </a>
         </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+    </nav>
 
-        <!-- Projects Gallery Grid -->
-        <div class="row grid-cards">
 
-            <div class="column unity grid-cards">
-                <a href="projects/shifting-beat.html">
+    <section class="main" id="main">
+
+        <section class="align-center center-width" id="projects">
+
+            <div id="FilterBtnContainer" class="flex-horizontal">
+                <button class="btn-filter active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn-filter" onclick="filterSelection('unity')"> Unity</button>
+                <button class="btn-filter" onclick="filterSelection('unreal')"> Unreal</button>
+                <button class="btn-filter" onclick="filterSelection('java')"> Java</button>
+                <!--            <button class="btn-filter" onclick="filterSelection('php')"> Php</button>-->
+                <!--            <button class="btn-filter" onclick="filterSelection('javascript')"> JavaScript</button>-->
+            </div>
+
+            <!-- Projects Gallery Grid -->
+            <div class="row grid-cards">
+
+                <div class="column unity grid-cards">
+                    <a href="projects/shifting-beat.html">
+                        <div class="content">
+                            <img src="./Assets/Icons/icon-wonderjam-a24.jpg" alt="Shifting Beat preview" style="width:100%">
+                            <h4>Shifting Beat</h4>
+                            <p>A rogue-lite game with music components made during the WonderJam A24.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="column unreal grid-cards">
+                    <a href="projects/online-shooter.html">
+                        <div class="content">
+                            <img src="./Assets/Icons/icon-online-shooter.png" alt="Car" style="width:100%">
+                            <h4>Online Shooter</h4>
+                            <p>An online third-person shooter using Steam Online Services.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="column unity java grid-cards">
+                    <a href="projects/ble-plugin.html">
+                        <div class="content">
+                            <img src="./Assets/Images/ble-plugin/bluetooth-logo.png" alt="BLE Plugin preview" style="width:100%">
+                            <h4>BLE Plugin & Package</h4>
+                            <p>A Bluetooth Low-Energy plugin in Java and its Unity support package with devices such as cycling speed sensors</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="column unity grid-cards">
+                    <a href="projects/labscape.html">
+                        <div class="content">
+                            <img src="./Assets/Images/labscape/icon3.png" alt="Labscape preview" style="width:100%">
+                            <h4>Labscape</h4>
+                            <p>A VR Escape game using Hand Tracking and Unity Engine.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="column java grid-cards">
                     <div class="content">
-                        <img src="./Assets/Icons/icon-wonderjam-a24.jpg" alt="Shifting Beat preview" style="width:100%">
-                        <h4>Shifting Beat</h4>
-                        <p>A rogue-lite game with music components made during the WonderJam A24.</p>
+                        <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                        <h4>Project 1</h4>
+                        <p>Php !!!</p>
                     </div>
-                </a>
-            </div>
+                </div>
 
-            <div class="column unreal grid-cards">
-                <a href="projects/online-shooter.html">
+                <div class="column java grid-cards">
                     <div class="content">
-                        <img src="./Assets/Icons/icon-online-shooter.png" alt="Car" style="width:100%">
-                        <h4>Online Shooter</h4>
-                        <p>An online third-person shooter using Steam Online Services.</p>
+                        <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                        <h4>Project 1</h4>
+                        <p>Php !!!</p>
                     </div>
-                </a>
-            </div>
+                </div>
 
-            <div class="column unity java grid-cards">
-                <a href="projects/ble-plugin.html">
+                <div class="column java grid-cards">
                     <div class="content">
-                        <img src="./Assets/Images/ble-plugin/bluetooth-logo.png" alt="BLE Plugin preview" style="width:100%">
-                        <h4>BLE Plugin & Package</h4>
-                        <p>A Bluetooth Low-Energy plugin in Java and its Unity support package with devices such as cycling speed sensors</p>
+                        <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                        <h4>Project 1</h4>
+                        <p>Php !!!</p>
                     </div>
-                </a>
-            </div>
+                </div>
 
-            <div class="column unity grid-cards">
-                <a href="projects/labscape.html">
+                <div class="column java grid-cards">
                     <div class="content">
-                        <img src="./Assets/Images/labscape/icon3.png" alt="Labscape preview" style="width:100%">
-                        <h4>Labscape</h4>
-                        <p>A VR Escape game using Hand Tracking and Unity Engine.</p>
+                        <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                        <h4>Project 1</h4>
+                        <p>Php !!!</p>
                     </div>
-                </a>
-            </div>
-
-            <div class="column java grid-cards">
-                <div class="content">
-                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Php !!!</p>
                 </div>
-            </div>
 
-            <div class="column java grid-cards">
-                <div class="content">
-                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Php !!!</p>
+                <div class="column java grid-cards">
+                    <div class="content">
+                        <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                        <h4>Project 1</h4>
+                        <p>Php !!!</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="column java grid-cards">
-                <div class="content">
-                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Php !!!</p>
+                <div class="column java grid-cards">
+                    <div class="content">
+                        <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                        <h4>Project 1</h4>
+                        <p>Php !!!</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="column java grid-cards">
-                <div class="content">
-                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Php !!!</p>
+                <div class="column java grid-cards">
+                    <div class="content">
+                        <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                        <h4>Project 1</h4>
+                        <p>Php !!!</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="column java grid-cards">
-                <div class="content">
-                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Php !!!</p>
+                <div class="column java grid-cards">
+                    <div class="content">
+                        <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                        <h4>Project 1</h4>
+                        <p>Php !!!</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="column java grid-cards">
-                <div class="content">
-                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Php !!!</p>
+                <div class="column java grid-cards">
+                    <div class="content">
+                        <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                        <h4>Project 1</h4>
+                        <p>Php !!!</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="column java grid-cards">
-                <div class="content">
-                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Php !!!</p>
-                </div>
-            </div>
+                <!-- PHP ++++++++++++++++++++++++ -->
+                <!--<div class="column php grid-cards">
+                    <div class="content">
+                        <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                        <h4>Project 1</h4>
+                        <p>Php !!!</p>
+                    </div>
+                </div>-->
 
-            <div class="column java grid-cards">
-                <div class="content">
-                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Php !!!</p>
-                </div>
-            </div>
+                <!-- JAVASCRIPT ++++++++++++++++++++++++ -->
+                <!--<div class="column javascript grid-cards">
+                    <div class="content">
+                        <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
+                        <h4>Project 1</h4>
+                        <p>JavaScript !!!</p>
+                    </div>
+                </div>-->
 
-            <div class="column java grid-cards">
-                <div class="content">
-                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Php !!!</p>
-                </div>
-            </div>
+            </div> <!-- End Project Grid -->
+        </section>
 
-            <!-- PHP ++++++++++++++++++++++++ -->
-            <!--<div class="column php grid-cards">
-                <div class="content">
-                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>Php !!!</p>
-                </div>
-            </div>-->
 
-            <!-- JAVASCRIPT ++++++++++++++++++++++++ -->
-            <!--<div class="column javascript grid-cards">
-                <div class="content">
-                    <img src="./Assets/Icons/LogoOlaee.png" alt="People" style="width:100%">
-                    <h4>Project 1</h4>
-                    <p>JavaScript !!!</p>
-                </div>
-            </div>-->
-
-        </div> <!-- End Project Grid -->
     </section>
 
-
-</section>
-
-<footer class="nav relative bottom bar">
-    <div class="flex-vertical" id="accounts">
-        <div class="flex-horizontal">
-            <a href="https://github.com/Giro4c">
-                <i class="fa fa-github"></i>
-                GitHub (Giro4c)
-            </a>
+    <footer class="nav relative bottom bar">
+        <div class="flex-vertical" id="accounts">
+            <div class="flex-horizontal">
+                <a href="https://github.com/Giro4c">
+                    <i class="fa fa-github"></i>
+                    GitHub (Giro4c)
+                </a>
+            </div>
+            <div class="flex-horizontal">
+                <a href="https://www.linkedin.com/in/camille-girodengo-19669b264/">
+                    <i class="fa fa-linkedin-square"></i>
+                    LinkedIn
+                </a>
+            </div>
         </div>
-        <div class="flex-horizontal">
-            <a href="https://www.linkedin.com/in/camille-girodengo-19669b264/">
-                <i class="fa fa-linkedin-square"></i>
-                 LinkedIn
-            </a>
-        </div>
-    </div>
-</footer>
+    </footer>
+</div>
 
 <script src="Assets/Scripts/travel.js"></script>
 <script src="Assets/Scripts/topnav.js"></script>
+<script src="Assets/Scripts/footer.js"></script>
 <script src="Assets/Scripts/filtered-grid.js"></script>
 <script src="Assets/Scripts/progressbar.js"></script>
 
