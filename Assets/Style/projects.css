@@ -32,6 +32,15 @@ header > * {
     align-content: center;
 }
 
+.column.grid-cards > a {
+    display: block;
+    height: 100%;
+}
+
+.column.grid-cards .content {
+    height: 100%;
+}
+
 /* ************************************************************ */
 /* MOBILE VERSION ********************************************* */
 /* ************************************************************ */
@@ -61,5 +70,16 @@ header > * {
         padding: 16px;
     }
 
+    .column.grid-cards h4 {
+        font-size: 5vw;
+        margin: 0;
+        padding: 21px 0;
+    }
+
+    .column.grid-cards p {
+        font-size: 4.3vw;
+        margin: 0;
+        padding-bottom: 16px;
+    }
 
 }
