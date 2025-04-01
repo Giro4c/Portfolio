@@ -110,15 +110,15 @@ nav.fixed, nav.sticky {
         right: 0;
         top: 0;
     }
-    .nav.responsive > a, .nav.responsive > div {
+    .nav.responsive a, .nav.responsive > div {
         float: none;
         display: block;
         text-align: center;
     }
 
-    .nav.responsive .dropbtn, .nav.responsive .dropdown-content {
+    .nav.responsive .dropbtn, .nav.responsive .dropdown-content, .nav.responsive .dropdown-content {
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
 
 }
@@ -130,6 +130,10 @@ nav.fixed, nav.sticky {
 @media (pointer:none), (pointer:coarse) {
 
     #topnav a {
+        font-size: 6.5vw;
+    }
+
+    #topnav .dropbtn {
         font-size: 6.5vw;
     }
 
