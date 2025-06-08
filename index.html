@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="Assets/Style/sidenav.css">
     <link rel="stylesheet" href="Assets/Style/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
 
-<section class="bar pilar flex-horizontal" id="split-background">
-    <div class="split left relative">
-        <div class="bg blur2 pilar img-poly-light"></div>
-    </div>
+<button id="fullscreen-btn" onclick="openFullscreen();">
+    <i class="material-icons" style="font-size:7vh;color:white;">&#xe5d0;</i>
+</button>
 
-<!--    <div class="split right relative">-->
-<!--        <div class="bg blur2 pilar img-poly-dark"></div>-->
-<!--    </div>-->
-
+<section class="" id="">
+    <video autoplay muted loop id="home-video">
+        <source src="Assets/Videos/Portfolio%20preview.mp4" type="video/mp4">
+    </video>
 </section>
 
 <section class="intro-container" id="intro-container">
-    <div class="intro" id="intro">
-        <div class="intro-title" id="intro-title">
+    <div class="intro darkmode" id="intro">
+        <div class="intro-title darkmode" id="intro-title">
             <h1>Hi &#128075;,</h1>
-            <h2>I'm <b class="cutout">CAMILLE GIRODENGO</b></h2>
+            <h2 class="darkmode">I'm <b class="cutout darkmode">CAMILLE GIRODENGO</b></h2>
         </div>
-        <div class="intro-content" id="intro-content">
-            <p>And I study <b class="cutout">Gameplay Programming</b> at UQAC</p>
+        <div class="intro-content darkmode" id="intro-content">
+            <p>And I study <b class="cutout darkmode">Gameplay Programming</b> at UQAC</p>
         </div>
     </div>
 </section>
@@ -53,6 +53,8 @@
         </a>
     </section>
 </section>
+
+<script src="Assets/Scripts/home-fullscreen.js"></script>
 
 </body>
 </html>
