@@ -20,7 +20,14 @@
     max-width: 1200px;
 }
 
-
+.tag-cloud {
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: #2196F3;
+    margin-top: 8px;
+}
 
 h2 {
     /*font-size: 60px;*/
