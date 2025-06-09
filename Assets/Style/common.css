@@ -142,7 +142,7 @@ body {
 }
 
 .img-poly-dark {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("../Images/poly-dark.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../Images/poly-dark.jpg");
 }
 
 .img-poly-winter {

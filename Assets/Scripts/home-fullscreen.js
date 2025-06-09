@@ -1,3 +1,23 @@
+// Video Management
+const video = document.getElementById("home-video");
+const videoContainer = document.getElementById("home-video-container");
+const backupBackground = document.getElementById("split-background");
+
+var sources = video.querySelectorAll('source');
+
+if (sources.length !== 0) {
+    var lastSource = sources[sources.length-1];
+
+    lastSource.addEventListener('error', function() {
+        // Show backup background
+        backupBackground.classList.remove('hidden')
+        // Remove video from document
+        videoContainer.remove();
+        // Debug message
+        console.log('Video failed to load, replaced with backup background.')
+    });
+}
+
 /* Get the element you want displayed in fullscreen mode (a video in this example): */
 var body = document.documentElement;
 

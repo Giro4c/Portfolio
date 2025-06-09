@@ -11,16 +11,24 @@
 </head>
 <body>
 
-<button id="fullscreen-btn" onclick="openFullscreen();">
+<button id="fullscreen-btn" onclick="toggleFullscreen();">
     <i class="material-icons" style="font-size:7vh;color:white;">&#xe5d0;</i>
 </button>
 
-<section class="" id="">
+<section class="bar pilar flex-horizontal hidden" id="split-background">
+    <div class="">
+        <div class="bg blur2 pilar img-poly-dark"></div>
+    </div>
+</section>
+
+<section id="home-video-container">
     <video autoplay muted loop id="home-video">
 <!--        <source src="https://raw.githubusercontent.com/Giro4c/Portfolio/main/Assets/Videos/Portfolio%20preview.mp4" type="video/mp4">-->
-        <source src="https://media.githubusercontent.com/media/Giro4c/Portfolio/main/Assets/Videos/Portfolio%20preview.mp4" type="video/mp4">
+<!--        <source src="https://media.githubusercontent.com/media/Giro4c/Portfolio/main/Assets/Videos/Portfolio%20preview.mp4" type="video/mp4">-->
 <!--        <source src="https://github.com/Giro4c/Portfolio/main/Portfolio%20preview.mp4" type="video/mp4">-->
+        <source src="Portfolio%20preview.mp4" type="video/mp4">
     </video>
+</section>
 
 <section class="intro-container" id="intro-container">
     <div class="intro darkmode" id="intro">
